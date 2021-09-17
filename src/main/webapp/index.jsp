@@ -162,90 +162,99 @@ Features
 
             <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
                 <h2>Tools</h2>
-                <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-            </div>
-
+            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+        </div>
+    <div class="row">
+        <div class="col">
             <!-- service item -->
             <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
                 <div class="service-item">
-                    <div class="service-icon">
-<%--                        <i class="fa fa-github fa-2x"></i>--%>
-                            <img src="img/Tools/download%20(1).png" alt="github">
-                    </div>
-
-                    <div class="service-desc">
-                        <h3> Github</h3>
-                        <p>
-                            GitHub is a web-based interface that uses Git, the open source version control software that lets multiple
-                            people make separate changes to web pages at the same time</p>
+                    <div>
+                        <%--                        <i class="fa fa-github fa-2x"></i>--%>
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" >
+                        <div class="service-desc">
+                            <h3> Github</h3>
+                            <p>Github description</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- end service item -->
+        </div>
 
+        <div class="col">
             <!-- service item -->
             <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
                 <div class="service-item">
-                    <div class="service-icon">
-<%--                        <i class="fa fa-pencil fa-2x"></i>--%>
-                            <img src="img/Tools/mongo.png" alt="mongodb">
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>Mongo DB</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end service item -->
-
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-                <div class="service-item">
-                    <div class="service-icon">
-<%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
-                             <img src="img/Tools/download.png" alt="heroku">
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>Heroku</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                    <div>
+                        <%--                        <i class="fa fa-pencil fa-2x"></i>--%>
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png" alt="mongodb" >
+                            <div class="service-desc">
+                                <h3>MongoDB</h3>
+                                <p>MongoDB description</p>
+                            </div>
                     </div>
                 </div>
             </div>
             <!-- end service item -->
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-                <div class="service-item">
-                    <div class="service-icon">
-<%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
-                            <img src="img/Tools/intelliji.png" alt="intelliJ">
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>IntelliJ</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end service item -->
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
-                        <img src="img/Tools/java.png" alt="Java Servlet">
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>Java Servlet</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end service item -->
-
         </div>
+
+        <div class="col">
+            <!-- service item -->
+            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+                <div class="service-item">
+                    <div>
+                        <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
+                        <img src="https://www.logolynx.com/images/logolynx/a7/a7433954a9e82f512afa218cb96089a9.png" alt="heroku" >
+                            <div class="service-desc">
+                                <h3>Heroku</h3>
+                                <p>Heroku description</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end service item -->
+        </div>
+
+    <div class="row">
+
+        <div class="col">
+            <!-- service item -->
+            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+                <div class="service-item">
+                    <div>
+                        <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
+                        <img src="https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png" alt="Java Servlet" >
+                        <div class="service-desc">
+                            <h3>Java Servlet</h3>
+                            <p>Java Servlet description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end service item -->
+        </div>
+
+        <div class="col">
+            <!-- service item -->
+            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+                <div class="service-item">
+                    <div>
+                        <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/512px-IntelliJ_IDEA_Icon.svg.png" alt="intelliJ">
+                        <div class="service-desc">
+                            <h3>IntelliJ</h3>
+                            <p>Intellij description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!----end second row----->
+
+    </div>
+
     </div>
 </section>
 
