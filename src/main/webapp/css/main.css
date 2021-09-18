@@ -444,11 +444,20 @@ top: -8px;
   font-weight: 700;
   line-height: 24px;
   margin: 25px 0 8px;
+
 }
 
+.work-item .overlay h5{
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 5px;
+}
 .work-item .overlay p {
+    padding-left: 20px;
   font-size: 14px;
   line-height: 24px;
+    text-align: left;
+
 }
 
 
@@ -568,6 +577,115 @@ top: -8px;
   margin-top: 15px;
   text-transform: uppercase;
 }
+
+/*Skill Bar*/
+#skill-bar{
+
+    display: flex;
+    background-color: transparent;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+#skill-bar h4{
+    font-weight: bolder;
+    color: whitesmoke;
+    display: inline-block;
+    margin-left: 230px;
+}
+#html{
+
+    flex-basis: 50%;
+
+}
+
+#css{
+
+    flex-basis: 50%;
+}
+
+#js{
+
+    flex-basis: 50%;
+}
+
+#java{
+
+    flex-basis: 50%;
+}
+.progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+}
+
+.progress-value-html {
+    animation: load-html 4s normal infinite;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+.progress-value-css {
+    animation: load-css 4s normal infinite;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+.progress-value-js {
+    animation: load-js 4s normal infinite;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+.progress-value-java {
+    animation: load-java 4s normal infinite;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-html {
+    0% { width: 3%; }
+    50% {width: 40%;}
+    100% { width: 75%; }
+}
+
+@keyframes load-css {
+    0% { width: 3%; }
+    67% {width: 20%;}
+    100% { width: 80%; }
+}
+
+@keyframes load-js {
+    0% { width: 3%; }
+    50% {width: 30%;}
+    100% { width: 60%; }
+}
+
+@keyframes load-java {
+    0% { width: 3%; }
+    50% {width: 50%;}
+    100% { width: 95%; }
+}
+/*End Skill Bar*/
 
 
 /*=========================================

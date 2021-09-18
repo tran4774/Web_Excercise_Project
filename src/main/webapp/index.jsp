@@ -9,7 +9,7 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- Page Title -->
-    <title>Themefisher.Free Bootstrap3 based HTML5 Templates</title>
+    <title>Web Project Team</title>
     <!-- Meta Description -->
     <meta name="description" content="Blue One Page Creative HTML5 Template">
     <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
@@ -75,9 +75,9 @@ Fixed Navigation
             <ul id="nav" class="nav navbar-nav">
                 <li class="current"><a href="#body">Home</a></li>
                 <li><a href="#features">Tools</a></li>
-                <li><a href="#works">Work</a></li>
+                <li><a href="#works">Assignments</a></li>
                 <li><a href="#team">Team</a></li>
-                <li><a href="http://google.com">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <!-- /main nav -->
@@ -153,7 +153,7 @@ End Home SliderEnd
 ==================================== -->
 
 <!--
-Features
+Tools
 ==================================== -->
 
 <section id="features" class="features">
@@ -256,15 +256,16 @@ Features
     </div>
 
     </div>
+    </div>
 </section>
 
 <!--
-End Features
+End Tools
 ==================================== -->
 
 
 <!--
-Our Works
+Our Assignments
 ==================================== -->
 
 <section id="works" class="works clearfix">
@@ -272,21 +273,21 @@ Our Works
         <div class="row">
 
             <div class="sec-title text-center">
-                <h2>Works</h2>
+                <h2>Assignments</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
             </div>
 
             <div class="sec-sub-title text-center">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                <p>There will be one assignment every week of the semester; assignments are due Wednesday at midnight </p>
             </div>
 
             <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
                 <ul class="text-center">
                     <li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
-                    <li><a href="javascript:;" data-filter=".branding" class="filter">Branding</a></li>
-                    <li><a href="javascript:;" data-filter=".web" class="filter">web</a></li>
-                    <li><a href="javascript:;" data-filter=".logo-design" class="filter">logo design</a></li>
-                    <li><a href="javascript:;" data-filter=".photography" class="filter">photography</a></li>
+                    <li><a href="javascript:;" data-filter=".Week3-5" class="filter">Week 3-5</a></li>
+                    <li><a href="javascript:;" data-filter=".Week6-10" class="filter">Week 5-10</a></li>
+                    <li><a href="javascript:;" data-filter=".final" class="filter">Final Project</a></li>
+
                 </ul>
             </div>
 
@@ -295,85 +296,81 @@ Our Works
 
     <div class="project-wrapper">
 
-        <figure class="mix work-item branding">
-            <img src="img/works/item-1.jpg" alt="">
+        <figure class="mix work-item Week3-5">
+            <img src="img/works/item-1.jpg.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-1.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-1.jpg.png"><i class="fa fa-eye fa-lg"></i></a>
+                <h4>Exercise 1 </h4>
+                <h5>Write a simple application with JSP and Servlet in 3 ways:</h5>
+                <p>
+
+                    using only JSP,<br>
+                    using only Servlet<br>
+                    and combining JSP and Servlet in MVC framework
+                </p>
             </figcaption>
         </figure>
 
-        <figure class="mix work-item web">
-            <img src="img/works/item-2.jpg" alt="">
+        <figure class="mix work-item Week3-5">
+            <img src="img/works/image-2.png" alt="">
             <figcaption class="overlay">
                 <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-2.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <h4>Exercise 2</h4>
+                <h5>Group work (<=3 students/group) </h5>
+                <p>Step 1: Think and discuss about an web application that may be needed for UTE (faculty, department) or others
+                    <br>
+                    Step 2: Get requirements from for web application in B1. <br>
+                    Step 3: Analyze requirements and design functional diagrams for the above application.</p>
             </figcaption>
         </figure>
 
-        <figure class="mix work-item logo-design">
-            <img src="img/works/item-3.jpg" alt="">
+        <figure class="mix work-item Week6-10">
+            <img src="img/works/image-3.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-3.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/image-3.png"><i class="fa fa-eye fa-lg"></i></a>
+                <h4>Exercise 3</h4>
+                <h5>Group work (<=3 students/group) </h5>
+                <p>Design prototype (UI- User interface) for web application in Exercise #2.</p>
             </figcaption>
         </figure>
 
-        <figure class="mix work-item photography">
-            <img src="img/works/item-4.jpg" alt="">
+        <figure class="mix work-item Week6-10">
+            <img src="img/works/image-4.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-4.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/image-4.png"><i class="fa fa-eye fa-lg"></i></a>
+                <h4>Exercise 4</h4>
+                <h5>Group work (<=3 students/group) </h5>
+                <p>Complete the user interface for web application in Exercise #3 according to the teacher's suggestions.</p>
             </figcaption>
         </figure>
 
-        <figure class="mix work-item branding">
-            <img src="img/works/item-5.jpg" alt="">
+        <figure class="mix work-item Week6-10">
+            <img src="img/works/image-5.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-5.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/image-5.png"><i class="fa fa-eye fa-lg"></i></a>
+                <h4>Exercise 5</h4>
+                <h5>Group work (<=3 students/group) </h5>
+                <p>Using JSP, JavaScript, Jquery, Bootstrap... to design the website interface <br>
+                    (according to the prototype in Exercise #4)</p>
             </figcaption>
         </figure>
 
-        <figure class="mix work-item web">
-            <img src="img/works/item-6.jpg" alt="">
+        <figure class="mix work-item final">
+            <img src="img/works/final.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-6.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/final.png"><i class="fa fa-eye fa-lg"></i></a>
+                <h4>Final Project</h4>
+                <h5>Group work (<=3 students/group) </h5>
+                <p>-Implement the complete web application based on all mini-exercises (Exercise #1 to #5)
+                    <br>
+                    -Deploy web application to a free host (eg Heroku or any other hosting)</p>
             </figcaption>
         </figure>
-
-        <figure class="mix work-item logo-design">
-            <img src="img/works/item-7.jpg" alt="">
-            <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-7.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
-            </figcaption>
-        </figure>
-
-        <figure class="mix work-item photography">
-            <img src="img/works/item-8.jpg" alt="">
-            <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-8.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
-            </figcaption>
-        </figure>
-
     </div>
-
-
 </section>
 
 <!--
-End Our Works
+End Our Assignments
 ==================================== -->
 
 <!--
@@ -487,44 +484,41 @@ Some fun facts
             <div class="row number-counters">
 
                 <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-                    <h2>Some Fun Facts</h2>
+                    <h2>Our Skill</h2>
                     <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
                 </div>
 
-                <!-- first count item -->
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-                    <div class="counters-item">
-                        <i class="fa fa-clock-o fa-3x"></i>
-                        <strong data-to="3200">0</strong>
-                        <!-- Set Your Number here. i,e. data-to="56" -->
-                        <p>Hours of Work</p>
+                <%--Star Skill Bar--%>
+                <div id="skill-bar">
+                        <div id="html">
+                            <h4>Html</h4>
+                            <div class="progress">
+                                <div class="progress-value-html"></div>
+                            </div>
+                        </div>
+
+                    <div id="css">
+                        <h4>Css</h4>
+                        <div class="progress">
+                            <div class="progress-value-css"></div>
+                        </div>
+                    </div>
+
+                    <div id="js">
+                        <h4>Java Script</h4>
+                        <div class="progress">
+                            <div class="progress-value-js"></div>
+                        </div>
+                    </div>
+
+                    <div id="java">
+                        <h4>Java</h4>
+                        <div class="progress">
+                            <div class="progress-value-java"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <div class="counters-item">
-                        <i class="fa fa-users fa-3x"></i>
-                        <strong data-to="120">0</strong>
-                        <!-- Set Your Number here. i,e. data-to="56" -->
-                        <p>Satisfied Clients</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                    <div class="counters-item">
-                        <i class="fa fa-rocket fa-3x"></i>
-                        <strong data-to="360">0</strong>
-                        <!-- Set Your Number here. i,e. data-to="56" -->
-                        <p> Projects Delivered </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-                    <div class="counters-item">
-                        <i class="fa fa-trophy fa-3x"></i>
-                        <strong data-to="6454">0</strong>
-                        <!-- Set Your Number here. i,e. data-to="56" -->
-                        <p>Awards Won</p>
-                    </div>
-                </div>
-                <!-- end first count item -->
+                <%--End Skill Bar--%>
 
             </div>
         </div>
@@ -545,21 +539,21 @@ Contact Us
         <div class="row mb50">
 
             <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
-                <h2>Let’s Discuss</h2>
+                <h2>Contact for us</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
             </div>
 
             <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                <p>This is info to contact us</p>
             </div>
 
             <!-- contact address -->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
                 <div class="contact-address">
-                    <h3>Cras at ultrices erat, sed vulputate!</h3>
-                    <p>2345 Setwant natrer, 1234,</p>
-                    <p>Washington. United States.</p>
-                    <p>(401) 1234 567</p>
+                    <h3>Dai hoc Su pham ky thuat</h3>
+                    <p>01 Vo Van Ngan</p>
+                    <p>Thu Duc City</p>
+                    <p>(+84) 0946220172</p>
                 </div>
             </div>
             <!-- end contact address -->
@@ -591,10 +585,10 @@ Contact Us
             <!-- footer social links -->
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
                 <ul class="footer-social">
-                    <li><a href="https://www.behance.net/Themefisher"><i class="fa fa-behance fa-2x"></i></a></li>
-                    <li><a href="https://www.twitter.com/Themefisher"><i class="fa fa-twitter fa-2x"></i></a></li>
-                    <li><a href="https://dribbble.com/themefisher"><i class="fa fa-dribbble fa-2x"></i></a></li>
-                    <li><a href="https://www.facebook.com/Themefisher"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100013408530482"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/helen_nipnay/"><i class="fa fa-instagram fa-2x"></i></a></li>
+
+
                 </ul>
             </div>
             <!-- end footer social links -->
@@ -617,12 +611,12 @@ End Contact Us
     <div class="container">
         <div class="row">
 
-            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
-                <div class="footer-single">
-                    <img src="img/footer-logo.png" alt="">
-                    <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </div>
+<%--            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">--%>
+<%--                <div class="footer-single">--%>
+<%--                    <img src="img/footer-logo.png" alt="">--%>
+<%--                    <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>--%>
+<%--                </div>--%>
+<%--            </div>--%>
 
             <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
                 <div class="footer-single">
@@ -663,7 +657,8 @@ End Contact Us
         <div class="row">
             <div class="col-md-12">
                 <p class="copyright text-center">
-                    Copyright © 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved. Designed & developed by <a href="http://themefisher.com/">Themefisher</a>
+                    Copyright 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved. Designed & developed by <a href="http://themefisher.com/">Themefisher</a>
+                    <br>Modify by Lo Tran Son
                 </p>
             </div>
         </div>
