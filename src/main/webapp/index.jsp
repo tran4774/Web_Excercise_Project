@@ -14,6 +14,7 @@
     <meta name="description" content="Blue One Page Creative HTML5 Template">
     <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
     <meta name="author" content="Muhammad Morshed">
+    <%@ page contentType="text/html; charset=UTF-8" %>
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -160,21 +161,21 @@ Tools
     <div class="container">
         <div class="row">
 
-            <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+            <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="50ms">
                 <h2>Tools</h2>
             <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
         </div>
     <div class="row">
         <div class="col">
             <!-- service item -->
-            <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+            <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms"  data-wow-delay="300ms">
                 <div class="service-item">
                     <div>
                         <%--                        <i class="fa fa-github fa-2x"></i>--%>
                         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" >
                         <div class="service-desc">
                             <h3> Github</h3>
-                            <p>Github description</p>
+<%--                            <p>GitHub is a web-based version-control and collaboration platform for software developers. GitHub facilitates social coding by providing a web interface to the Git code repository and management tools for collaboration. </p>--%>
                         </div>
                     </div>
                 </div>
@@ -184,14 +185,14 @@ Tools
 
         <div class="col">
             <!-- service item -->
-            <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+            <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms"  data-wow-delay="600ms">
                 <div class="service-item">
                     <div>
                         <%--                        <i class="fa fa-pencil fa-2x"></i>--%>
                         <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png" alt="mongodb" >
                             <div class="service-desc">
                                 <h3>MongoDB</h3>
-                                <p>MongoDB description</p>
+<%--                                <p>MongoDB is an open source NoSQL database management program. NoSQL is used as an alternative to traditional relational databases. NoSQL databases are quite useful for working with large sets of distributed data.</p>--%>
                             </div>
                     </div>
                 </div>
@@ -201,14 +202,14 @@ Tools
 
         <div class="col">
             <!-- service item -->
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+            <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms"  data-wow-delay="900ms">
                 <div class="service-item">
                     <div>
                         <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
                         <img src="https://www.logolynx.com/images/logolynx/a7/a7433954a9e82f512afa218cb96089a9.png" alt="heroku" >
                             <div class="service-desc">
                                 <h3>Heroku</h3>
-                                <p>Heroku description</p>
+<%--                                <p>Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps. Our platform is elegant, flexible, and easy to use, offering developers the simplest path to getting their apps to market.</p>--%>
                             </div>
                     </div>
                 </div>
@@ -216,18 +217,16 @@ Tools
             <!-- end service item -->
         </div>
 
-    <div class="row">
-
         <div class="col">
             <!-- service item -->
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+            <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms"  data-wow-delay="1200ms">
                 <div class="service-item">
                     <div>
                         <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
                         <img src="https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png" alt="Java Servlet" >
                         <div class="service-desc">
                             <h3>Java Servlet</h3>
-                            <p>Java Servlet description</p>
+                            <%--                            <p>A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model.</p>--%>
                         </div>
                     </div>
                 </div>
@@ -237,21 +236,35 @@ Tools
 
         <div class="col">
             <!-- service item -->
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+            <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms"  data-wow-delay="1500ms">
                 <div class="service-item">
                     <div>
                         <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/512px-IntelliJ_IDEA_Icon.svg.png" alt="intelliJ">
                         <div class="service-desc">
                             <h3>IntelliJ</h3>
-                            <p>Intellij description</p>
+                            <%--                            <p>IntelliJ IDEA is a special programming environment or integrated development environment (IDE) largely meant for Java. This environment is used especially for the development of programs.</p>--%>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-    </div> <!----end second row----->
+        <div class="col">
+            <!-- service item -->
+            <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms"  data-wow-delay="1800ms">
+                <div class="service-item">
+                    <div>
+                        <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/512px-Stack_Overflow_icon.svg.png" alt="intelliJ">
+                        <div class="service-desc">
+                            <h3>Stack Overflow</h3>
+                            <%--                            <p>IntelliJ IDEA is a special programming environment or integrated development environment (IDE) largely meant for Java. This environment is used especially for the development of programs.</p>--%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -379,93 +392,72 @@ Meet Our Team
 
 <section id="team" class="team">
     <div class="container">
-        <div class="row">
 
-            <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+
+            <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms" style="padding-bottom: 30px">
                 <h2>Meet Our Team</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
             </div>
 
-            <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-            </div>
-
+        <div class="col">
             <!-- single member -->
-            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-                <div class="member-thumb">
-                    <img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-                    <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </div>
-                <h4>John Filmr Doe</h4>
-                <span>Managing Director</span>
-            </figure>
-            <!-- end single member -->
+                <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center" align="center">
+                    <div class="member-thumb">
+                        <img src="img/team/member-1.png"
+                             class="img-circle center-block">
+                        <figcaption class="overlay">
+                            <h5> </h5>
+                            <p></p>
+                            <ul class="social-links text-center">
+                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </div>
+                    <h4>Lô Minh Phát</h4>
+                    <span>Frontend & DB Developer</span>
+                </figure>
+                <!-- end single member -->
 
-            <!-- single member -->
-            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                <div class="member-thumb">
-                    <img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
-                    <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </div>
-                <h4>Martin Matrone</h4>
-                <span>Lead Developer</span>
-            </figure>
-            <!-- end single member -->
+                <!-- single member -->
+                <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center" >
+                    <div class="member-thumb ">
+                        <img src="img/team/member-2.png" alt="Team Member"
+                             class="img-circle center-block">
+                        <figcaption class="overlay" >
+                            <h5></h5>
+                            <p></p>
+                            <ul class="social-links text-center">
+                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </div>
+                    <h4>Nguyễn Bảo Trấn</h4>
+                    <span>Backend & DB Developer</span>
+                </figure>
+                <!-- end single member -->
 
-            <!-- single member -->
-            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                <div class="member-thumb">
-                    <img src="img/team/member-3.png" alt="Team Member" class="img-responsive">
-                    <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </div>
-                <h4>Steve Flaulkin</h4>
-                <span>Sr. UI Designer</span>
-            </figure>
-            <!-- end single member -->
-
-            <!-- single member -->
-            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-                <div class="member-thumb">
-                    <img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-                    <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </div>
-                <h4>John Filmr Doe</h4>
-                <span>Managing Director</span>
-            </figure>
-            <!-- end single member -->
-
+                <!-- single member -->
+                <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center" align="center">
+                    <div class="member-thumb">
+                        <img src="img/team/member-3.png" alt="Team Member" class="img-circle center-block">
+                        <figcaption class="overlay">
+                            <h5></h5>
+                            <p></p>
+                            <ul class="social-links text-center">
+                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </div>
+                    <h4>Nguyễn Văn Sơn</h4>
+                    <span>Frontend Designer, Developer</span>
+                </figure>
+                <!-- end single member -->
         </div>
     </div>
 </section>
@@ -522,6 +514,7 @@ Some fun facts
 
             </div>
         </div>
+
     </div>
 </section>
 

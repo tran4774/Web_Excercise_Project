@@ -326,20 +326,23 @@ top: -8px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 
-.service-desc {
-  text-align: center;
-  position: relative;
-  top: 5px;
+.service-desc p {
+    text-align: justify;
+    position: relative;
+    top: 5px;
 }
 
 .service-desc h3 {
-  color: #062033;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 25px;
+    text-align: center;
+    color: #062033;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 
@@ -467,29 +470,38 @@ top: -8px;
 ==========================================*/
 
 .member-thumb {
-  width: 273px;
+    width: 300px;
   position: relative;
+  display: contents;
+}
+.member-thumb img {
+    width: 300px;
+    height: 300px;
 }
 
 .member-thumb .overlay h5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  margin: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 10px 0;
 }
 
 .member-thumb .overlay {
+    width: 310px;
 	font-size: 16px;
-	padding: 20px;
 	line-height: 24px;
+    height: 310px;
+    position: absolute;
+    left: 9.5%;
 }
 
+
 .team-member h4 {
-  color: #062033;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-  margin: 15px 0 8px;
+    color: #062033;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 15px 0 8px;
 }
 
 .member-thumb:hover .overlay {
