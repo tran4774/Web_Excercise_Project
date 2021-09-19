@@ -314,19 +314,35 @@ top: -8px;
   padding: 10px 13px;
 }
 .service-icon img{
-    width: 35px;
+    width: 10px;
+    padding-right: 20px;
+    display: block;
+    align-items: center;
 }
-.service-desc {
-  margin-left: 70px;
-  position: relative;
-  top: 5px;
+
+.service-item img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.service-desc p {
+    text-align: justify;
+    position: relative;
+    top: 5px;
 }
 
 .service-desc h3 {
-  color: #062033;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 25px;
+    text-align: center;
+    color: #062033;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 
@@ -431,11 +447,20 @@ top: -8px;
   font-weight: 700;
   line-height: 24px;
   margin: 25px 0 8px;
+
 }
 
+.work-item .overlay h5{
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 5px;
+}
 .work-item .overlay p {
+    padding-left: 20px;
   font-size: 14px;
   line-height: 24px;
+    text-align: left;
+
 }
 
 
@@ -445,29 +470,38 @@ top: -8px;
 ==========================================*/
 
 .member-thumb {
-  width: 273px;
+    width: 300px;
   position: relative;
+  display: contents;
+}
+.member-thumb img {
+    width: 300px;
+    height: 300px;
 }
 
 .member-thumb .overlay h5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  margin: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 10px 0;
 }
 
 .member-thumb .overlay {
+    width: 310px;
 	font-size: 16px;
-	padding: 20px;
 	line-height: 24px;
+    border-radius: 170px;
+    height: 310px;
+    position: absolute;
+    left: 9.5%;
 }
 
 .team-member h4 {
-  color: #062033;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-  margin: 15px 0 8px;
+    color: #062033;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 15px 0 8px;
 }
 
 .member-thumb:hover .overlay {
@@ -556,6 +590,115 @@ top: -8px;
   text-transform: uppercase;
 }
 
+/*Skill Bar*/
+#skill-bar{
+
+    display: flex;
+    background-color: transparent;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+#skill-bar h4{
+    font-weight: bolder;
+    color: whitesmoke;
+    display: inline-block;
+    margin-left: 230px;
+}
+#html{
+
+    flex-basis: 50%;
+
+}
+
+#css{
+
+    flex-basis: 50%;
+}
+
+#js{
+
+    flex-basis: 50%;
+}
+
+#java{
+
+    flex-basis: 50%;
+}
+.progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+}
+
+.progress-value-html {
+    animation: load-html 4s normal infinite;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+.progress-value-css {
+    animation: load-css 4s normal infinite;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+.progress-value-js {
+    animation: load-js 4s normal infinite;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+.progress-value-java {
+    animation: load-java 4s normal infinite;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load-html {
+    0% { width: 3%; }
+    50% {width: 40%;}
+    100% { width: 75%; }
+}
+
+@keyframes load-css {
+    0% { width: 3%; }
+    67% {width: 20%;}
+    100% { width: 80%; }
+}
+
+@keyframes load-js {
+    0% { width: 3%; }
+    50% {width: 30%;}
+    100% { width: 60%; }
+}
+
+@keyframes load-java {
+    0% { width: 3%; }
+    50% {width: 50%;}
+    100% { width: 95%; }
+}
+/*End Skill Bar*/
+
 
 /*=========================================
 	Contact Us
@@ -619,7 +762,7 @@ label.error {
   text-transform: capitalize;
 }
 
-.contact-form #form-submit {
+.contact-form #submit {
   background: url("../img/envelop.png") no-repeat scroll 0 15px transparent;
   border: 0 none;
   color: #000;

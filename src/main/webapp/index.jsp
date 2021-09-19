@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js"> <!--<![endif]-->
 <head>
     <!-- meta charec set -->
-    <meta charset="utf-8">
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- Page Title -->
-    <title>Themefisher.Free Bootstrap3 based HTML5 Templates</title>
+    <title>Web Project Team</title>
     <!-- Meta Description -->
     <meta name="description" content="Blue One Page Creative HTML5 Template">
-    <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+    <meta name="keywords"
+          content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
     <meta name="author" content="Muhammad Morshed">
+    <%@ page contentType="text/html; charset=UTF-8" %>
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -75,9 +77,9 @@ Fixed Navigation
             <ul id="nav" class="nav navbar-nav">
                 <li class="current"><a href="#body">Home</a></li>
                 <li><a href="#features">Tools</a></li>
-                <li><a href="#works">Work</a></li>
+                <li><a href="#works">Assignments</a></li>
                 <li><a href="#team">Team</a></li>
-                <li><a href="http://google.com">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <!-- /main nav -->
@@ -87,7 +89,6 @@ Fixed Navigation
 <!--
 End Fixed Navigation
 ==================================== -->
-
 
 
 <!--
@@ -110,7 +111,8 @@ Home Slider
             <!-- single slide -->
             <div class="item active" style="background: url(img/4872528.jpg) no-repeat right top  ;">
                 <div class="carousel-caption">
-                    <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Welcome to our web</span>!</h2>
+                    <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Welcome to our web</span>!
+                    </h2>
                     <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color"></span>
                         This site is for posting assignments </h3>
                     <p data-wow-duration="1000ms" class="wow slideInRight animated">WEB PROGRAMMING </p>
@@ -128,7 +130,8 @@ Home Slider
             <!-- single slide -->
             <div class="item" style="background: url(img/4905084.jpg) no-repeat top ;">
                 <div class="carousel-caption">
-                    <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Team</span></h2>
+                    <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">
+                        <span>Team</span></h2>
                     <h3 data-wow-duration="500ms" class="wow slideInLeft animated">LO TRAN SON</h3>
 
 
@@ -153,109 +156,139 @@ End Home SliderEnd
 ==================================== -->
 
 <!--
-Features
+Tools
 ==================================== -->
 
 <section id="features" class="features">
     <div class="container">
         <div class="row">
 
-            <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+            <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="50ms">
                 <h2>Tools</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <!-- service item -->
+                    <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div class="service-item">
+                            <div>
+                                <%--                        <i class="fa fa-github fa-2x"></i>--%>
+                                <a href="https://github.com/tran4774/Web_Excercise_Project">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github">
 
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
-                <div class="service-item">
-                    <div class="service-icon">
-<%--                        <i class="fa fa-github fa-2x"></i>--%>
-                            <img src="img/Tools/download%20(1).png" alt="github">
+                                    <div class="service-desc">
+                                        <h3> Github</h3>
+                                        <%--                            <p>GitHub is a web-based version-control and collaboration platform for software developers. GitHub facilitates social coding by providing a web interface to the Git code repository and management tools for collaboration. </p>--%>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                    <!-- end service item -->
+                </div>
 
-                    <div class="service-desc">
-                        <h3> Github</h3>
-                        <p>
-                            GitHub is a web-based interface that uses Git, the open source version control software that lets multiple
-                            people make separate changes to web pages at the same time</p>
+                <div class="col">
+                    <!-- service item -->
+                    <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <div class="service-item">
+                            <div>
+                                <%--                        <i class="fa fa-pencil fa-2x"></i>--%>
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png"
+                                     alt="mongodb">
+                                <div class="service-desc">
+                                    <h3>MongoDB</h3>
+                                    <%--                                <p>MongoDB is an open source NoSQL database management program. NoSQL is used as an alternative to traditional relational databases. NoSQL databases are quite useful for working with large sets of distributed data.</p>--%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end service item -->
+                </div>
+
+                <div class="col">
+                    <!-- service item -->
+                    <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="900ms">
+                        <div class="service-item">
+                            <div>
+                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
+                                <img src="https://www.logolynx.com/images/logolynx/a7/a7433954a9e82f512afa218cb96089a9.png"
+                                     alt="heroku">
+                                <div class="service-desc">
+                                    <h3>Heroku</h3>
+                                    <%--                                <p>Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps. Our platform is elegant, flexible, and easy to use, offering developers the simplest path to getting their apps to market.</p>--%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end service item -->
+                </div>
+
+                <div class="col">
+                    <!-- service item -->
+                    <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1200ms">
+                        <div class="service-item">
+                            <div>
+                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
+                                <img src="https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png"
+                                     alt="Java Servlet">
+                                <div class="service-desc">
+                                    <h3>Java Servlet</h3>
+                                    <%--                            <p>A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model.</p>--%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end service item -->
+                </div>
+
+                <div class="col">
+                    <!-- service item -->
+                    <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1500ms">
+                        <div class="service-item">
+                            <div>
+                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/512px-IntelliJ_IDEA_Icon.svg.png"
+                                     alt="intelliJ">
+                                <div class="service-desc">
+                                    <h3>IntelliJ</h3>
+                                    <%--                            <p>IntelliJ IDEA is a special programming environment or integrated development environment (IDE) largely meant for Java. This environment is used especially for the development of programs.</p>--%>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- end service item -->
 
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-                <div class="service-item">
-                    <div class="service-icon">
-<%--                        <i class="fa fa-pencil fa-2x"></i>--%>
-                            <img src="img/Tools/mongo.png" alt="mongodb">
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>Mongo DB</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                <div class="col">
+                    <!-- service item -->
+                    <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1800ms">
+                        <div class="service-item">
+                            <div>
+                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/512px-Stack_Overflow_icon.svg.png"
+                                     alt="intelliJ">
+                                <div class="service-desc">
+                                    <h3>Stack Overflow</h3>
+                                    <%--                            <p>IntelliJ IDEA is a special programming environment or integrated development environment (IDE) largely meant for Java. This environment is used especially for the development of programs.</p>--%>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- end service item -->
 
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-                <div class="service-item">
-                    <div class="service-icon">
-<%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
-                             <img src="img/Tools/download.png" alt="heroku">
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>Heroku</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                    </div>
-                </div>
             </div>
-            <!-- end service item -->
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-                <div class="service-item">
-                    <div class="service-icon">
-<%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
-                            <img src="img/Tools/intelliji.png" alt="intelliJ">
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>IntelliJ</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end service item -->
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
-                        <img src="img/Tools/java.png" alt="Java Servlet">
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>Java Servlet</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end service item -->
 
         </div>
     </div>
 </section>
 
 <!--
-End Features
+End Tools
 ==================================== -->
 
 
 <!--
-Our Works
+Our Assignments
 ==================================== -->
 
 <section id="works" class="works clearfix">
@@ -263,21 +296,22 @@ Our Works
         <div class="row">
 
             <div class="sec-title text-center">
-                <h2>Works</h2>
+                <h2>Assignments</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
             </div>
 
             <div class="sec-sub-title text-center">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                <p>There will be one assignment every week of the semester; assignments are due Wednesday at
+                    midnight </p>
             </div>
 
             <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
                 <ul class="text-center">
                     <li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
-                    <li><a href="javascript:;" data-filter=".branding" class="filter">Branding</a></li>
-                    <li><a href="javascript:;" data-filter=".web" class="filter">web</a></li>
-                    <li><a href="javascript:;" data-filter=".logo-design" class="filter">logo design</a></li>
-                    <li><a href="javascript:;" data-filter=".photography" class="filter">photography</a></li>
+                    <li><a href="javascript:;" data-filter=".Week3-5" class="filter">Week 3-5</a></li>
+                    <li><a href="javascript:;" data-filter=".Week6-10" class="filter">Week 5-10</a></li>
+                    <li><a href="javascript:;" data-filter=".final" class="filter">Final Project</a></li>
+
                 </ul>
             </div>
 
@@ -286,85 +320,88 @@ Our Works
 
     <div class="project-wrapper">
 
-        <figure class="mix work-item branding">
-            <img src="img/works/item-1.jpg" alt="">
+        <figure class="mix work-item Week3-5">
+            <img src="img/works/item-1.jpg.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-1.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" href="/EmailListServlet"><i class="fa fa-eye fa-lg"></i></a>
+                <h4>Exercise 1 </h4>
+                <h5>Write a simple application with JSP and Servlet in 3 ways:</h5>
+                <p>
+
+                    using only JSP,<br>
+                    using only Servlet<br>
+                    and combining JSP and Servlet in MVC framework
+                </p>
             </figcaption>
         </figure>
 
-        <figure class="mix work-item web">
-            <img src="img/works/item-2.jpg" alt="">
+        <figure class="mix work-item Week3-5">
+            <img src="img/works/image-2.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-2.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-2.jpg"><i
+                        class="fa fa-eye fa-lg"></i></a>
+                <h4>Exercise 2</h4>
+                <h5>Group work (<=3 students/group) </h5>
+                <p>Step 1: Think and discuss about an web application that may be needed for UTE (faculty, department)
+                    or others
+                    <br>
+                    Step 2: Get requirements from for web application in B1. <br>
+                    Step 3: Analyze requirements and design functional diagrams for the above application.</p>
             </figcaption>
         </figure>
 
-        <figure class="mix work-item logo-design">
-            <img src="img/works/item-3.jpg" alt="">
+        <figure class="mix work-item Week6-10">
+            <img src="img/works/image-3.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-3.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/image-3.png"><i
+                        class="fa fa-eye fa-lg"></i></a>
+                <h4>Exercise 3</h4>
+                <h5>Group work (<=3 students/group) </h5>
+                <p>Design prototype (UI- User interface) for web application in Exercise #2.</p>
             </figcaption>
         </figure>
 
-        <figure class="mix work-item photography">
-            <img src="img/works/item-4.jpg" alt="">
+        <figure class="mix work-item Week6-10">
+            <img src="img/works/image-4.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-4.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/image-4.png"><i
+                        class="fa fa-eye fa-lg"></i></a>
+                <h4>Exercise 4</h4>
+                <h5>Group work (<=3 students/group) </h5>
+                <p>Complete the user interface for web application in Exercise #3 according to the teacher's
+                    suggestions.</p>
             </figcaption>
         </figure>
 
-        <figure class="mix work-item branding">
-            <img src="img/works/item-5.jpg" alt="">
+        <figure class="mix work-item Week6-10">
+            <img src="img/works/image-5.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-5.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/image-5.png"><i
+                        class="fa fa-eye fa-lg"></i></a>
+                <h4>Exercise 5</h4>
+                <h5>Group work (<=3 students/group) </h5>
+                <p>Using JSP, JavaScript, Jquery, Bootstrap... to design the website interface <br>
+                    (according to the prototype in Exercise #4)</p>
             </figcaption>
         </figure>
 
-        <figure class="mix work-item web">
-            <img src="img/works/item-6.jpg" alt="">
+        <figure class="mix work-item final">
+            <img src="img/works/final.png" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-6.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
+                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/final.png"><i
+                        class="fa fa-eye fa-lg"></i></a>
+                <h4>Final Project</h4>
+                <h5>Group work (<=3 students/group) </h5>
+                <p>-Implement the complete web application based on all mini-exercises (Exercise #1 to #5)
+                    <br>
+                    -Deploy web application to a free host (eg Heroku or any other hosting)</p>
             </figcaption>
         </figure>
-
-        <figure class="mix work-item logo-design">
-            <img src="img/works/item-7.jpg" alt="">
-            <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-7.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
-            </figcaption>
-        </figure>
-
-        <figure class="mix work-item photography">
-            <img src="img/works/item-8.jpg" alt="">
-            <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-8.jpg"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Labore et dolore magnam</h4>
-                <p>Photography</p>
-            </figcaption>
-        </figure>
-
     </div>
-
-
 </section>
 
 <!--
-End Our Works
+End Our Assignments
 ==================================== -->
 
 <!--
@@ -373,24 +410,22 @@ Meet Our Team
 
 <section id="team" class="team">
     <div class="container">
-        <div class="row">
 
-            <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-                <h2>Meet Our Team</h2>
-                <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-            </div>
 
-            <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-            </div>
+        <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms" style="padding-bottom: 30px">
+            <h2>Meet Our Team</h2>
+            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+        </div>
 
+        <div class="col">
             <!-- single member -->
-            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+            <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center" align="center">
                 <div class="member-thumb">
-                    <img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+                    <img src="img/team/member-1.png"
+                         class="img-circle center-block">
                     <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
+                        <h5></h5>
+                        <p></p>
                         <ul class="social-links text-center">
                             <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
                             <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -398,18 +433,19 @@ Meet Our Team
                         </ul>
                     </figcaption>
                 </div>
-                <h4>John Filmr Doe</h4>
-                <span>Managing Director</span>
+                <h4>Lô Minh Phát</h4>
+                <span>Frontend & DB Developer</span>
             </figure>
             <!-- end single member -->
 
             <!-- single member -->
-            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                <div class="member-thumb">
-                    <img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
+            <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center">
+                <div class="member-thumb ">
+                    <img src="img/team/member-2.png" alt="Team Member"
+                         class="img-circle center-block">
                     <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
+                        <h5></h5>
+                        <p></p>
                         <ul class="social-links text-center">
                             <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
                             <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -417,18 +453,18 @@ Meet Our Team
                         </ul>
                     </figcaption>
                 </div>
-                <h4>Martin Matrone</h4>
-                <span>Lead Developer</span>
+                <h4>Nguyễn Bảo Trấn</h4>
+                <span>Backend & DB Developer</span>
             </figure>
             <!-- end single member -->
 
             <!-- single member -->
-            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+            <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center" align="center">
                 <div class="member-thumb">
-                    <img src="img/team/member-3.png" alt="Team Member" class="img-responsive">
+                    <img src="img/team/member-3.png" alt="Team Member" class="img-circle center-block">
                     <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
+                        <h5></h5>
+                        <p></p>
                         <ul class="social-links text-center">
                             <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
                             <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -436,30 +472,10 @@ Meet Our Team
                         </ul>
                     </figcaption>
                 </div>
-                <h4>Steve Flaulkin</h4>
-                <span>Sr. UI Designer</span>
+                <h4>Nguyễn Văn Sơn</h4>
+                <span>Frontend Designer, Developer</span>
             </figure>
             <!-- end single member -->
-
-            <!-- single member -->
-            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-                <div class="member-thumb">
-                    <img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-                    <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </div>
-                <h4>John Filmr Doe</h4>
-                <span>Managing Director</span>
-            </figure>
-            <!-- end single member -->
-
         </div>
     </div>
 </section>
@@ -478,47 +494,45 @@ Some fun facts
             <div class="row number-counters">
 
                 <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-                    <h2>Some Fun Facts</h2>
+                    <h2>Our Skill</h2>
                     <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
                 </div>
 
-                <!-- first count item -->
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-                    <div class="counters-item">
-                        <i class="fa fa-clock-o fa-3x"></i>
-                        <strong data-to="3200">0</strong>
-                        <!-- Set Your Number here. i,e. data-to="56" -->
-                        <p>Hours of Work</p>
+                <%--Star Skill Bar--%>
+                <div id="skill-bar">
+                    <div id="html">
+                        <h4>HTML</h4>
+                        <div class="progress">
+                            <div class="progress-value-html"></div>
+                        </div>
+                    </div>
+
+                    <div id="css">
+                        <h4>CSS</h4>
+                        <div class="progress">
+                            <div class="progress-value-css"></div>
+                        </div>
+                    </div>
+
+                    <div id="js">
+                        <h4>Javascript</h4>
+                        <div class="progress">
+                            <div class="progress-value-js"></div>
+                        </div>
+                    </div>
+
+                    <div id="java">
+                        <h4>Java</h4>
+                        <div class="progress">
+                            <div class="progress-value-java"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <div class="counters-item">
-                        <i class="fa fa-users fa-3x"></i>
-                        <strong data-to="120">0</strong>
-                        <!-- Set Your Number here. i,e. data-to="56" -->
-                        <p>Satisfied Clients</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                    <div class="counters-item">
-                        <i class="fa fa-rocket fa-3x"></i>
-                        <strong data-to="360">0</strong>
-                        <!-- Set Your Number here. i,e. data-to="56" -->
-                        <p> Projects Delivered </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-                    <div class="counters-item">
-                        <i class="fa fa-trophy fa-3x"></i>
-                        <strong data-to="6454">0</strong>
-                        <!-- Set Your Number here. i,e. data-to="56" -->
-                        <p>Awards Won</p>
-                    </div>
-                </div>
-                <!-- end first count item -->
+                <%--End Skill Bar--%>
 
             </div>
         </div>
+
     </div>
 </section>
 
@@ -536,56 +550,58 @@ Contact Us
         <div class="row mb50">
 
             <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
-                <h2>Let’s Discuss</h2>
+                <h2>Contact for us</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
             </div>
 
             <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                <p>This is info to contact us</p>
             </div>
 
             <!-- contact address -->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
                 <div class="contact-address">
-                    <h3>Cras at ultrices erat, sed vulputate!</h3>
-                    <p>2345 Setwant natrer, 1234,</p>
-                    <p>Washington. United States.</p>
-                    <p>(401) 1234 567</p>
+                    <h3>Dai hoc Su pham ky thuat</h3>
+                    <p>01 Vo Van Ngan</p>
+                    <p>Thu Duc City</p>
+                    <p>(+84) 0946220172</p>
                 </div>
             </div>
             <!-- end contact address -->
 
             <!-- contact form -->
-            <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+            <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms"
+                 data-wow-delay="300ms">
                 <div class="contact-form">
-                    <h3>Say hello!</h3>
-                    <form action="#" id="contact-form">
-                        <div class="input-group name-email">
-                            <div class="input-field">
-                                <input type="text" name="name" id="name" placeholder="Name" class="form-control">
-                            </div>
-                            <div class="input-field">
-                                <input type="email" name="email" id="email" placeholder="Email" class="form-control">
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
-                        </div>
-                        <div class="input-group">
-                            <input type="submit" id="form-submit" class="pull-right" value="Send message">
-                        </div>
+                    <form action="EmailListServlet" method="post">
+                        <input type="hidden" name="action" value="add">
+
+                        <label>Email:</label>
+                        <input type="email" name="email" required><br>
+                        <!-- required là thuộc tính hiện thông tin cần bắt buộc -->
+
+                        <label>First Name:</label>
+                        <input type="text" name="firstName" required><br>
+
+                        <label>Last Name:</label>
+                        <input type="text" name="lastName" required><br>
+
+                        <label>&nbsp;</label>
+                        <input type="submit" value="Join Now" id="submit"><br>
                     </form>
                 </div>
             </div>
             <!-- end contact form -->
 
             <!-- footer social links -->
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms"
+                 data-wow-delay="600ms">
                 <ul class="footer-social">
-                    <li><a href="https://www.behance.net/Themefisher"><i class="fa fa-behance fa-2x"></i></a></li>
-                    <li><a href="https://www.twitter.com/Themefisher"><i class="fa fa-twitter fa-2x"></i></a></li>
-                    <li><a href="https://dribbble.com/themefisher"><i class="fa fa-dribbble fa-2x"></i></a></li>
-                    <li><a href="https://www.facebook.com/Themefisher"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100013408530482"><i
+                            class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/helen_nipnay/"><i class="fa fa-instagram fa-2x"></i></a></li>
+
+
                 </ul>
             </div>
             <!-- end footer social links -->
@@ -594,7 +610,7 @@ Contact Us
     </div>
 
     <!-- Google map -->
-<%--    <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>--%>
+    <%--    <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>--%>
     <!-- End Google map -->
 
 </section>
@@ -608,14 +624,15 @@ End Contact Us
     <div class="container">
         <div class="row">
 
-            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
-                <div class="footer-single">
-                    <img src="img/footer-logo.png" alt="">
-                    <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </div>
+            <%--            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">--%>
+            <%--                <div class="footer-single">--%>
+            <%--                    <img src="img/footer-logo.png" alt="">--%>
+            <%--                    <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>--%>
+            <%--                </div>--%>
+            <%--            </div>--%>
 
-            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                 data-wow-delay="300ms">
                 <div class="footer-single">
                     <h6>Subscribe </h6>
                     <form action="#" class="subscribe">
@@ -626,7 +643,8 @@ End Contact Us
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                 data-wow-delay="600ms">
                 <div class="footer-single">
                     <h6>Explore</h6>
                     <ul>
@@ -638,7 +656,8 @@ End Contact Us
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                 data-wow-delay="900ms">
                 <div class="footer-single">
                     <h6>Support</h6>
                     <ul>
@@ -654,7 +673,9 @@ End Contact Us
         <div class="row">
             <div class="col-md-12">
                 <p class="copyright text-center">
-                    Copyright © 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved. Designed & developed by <a href="http://themefisher.com/">Themefisher</a>
+                    Copyright 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved. Designed &
+                    developed by <a href="http://themefisher.com/">Themefisher</a>
+                    <br>Modify by Lo Tran Son
                 </p>
             </div>
         </div>
@@ -685,18 +706,19 @@ End Contact Us
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 <!-- Google Map -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
 <!-- jquery easing -->
 <script src="js/jquery.easing.min.js"></script>
 <!-- jquery easing -->
 <script src="js/wow.min.js"></script>
 <script>
-    var wow = new WOW ({
-            boxClass:     'wow',      // animated element css class (default is wow)
+    var wow = new WOW({
+            boxClass: 'wow',      // animated element css class (default is wow)
             animateClass: 'animated', // animation css class (default is animated)
-            offset:       120,          // distance to the element when triggering the animation (default is 0)
-            mobile:       false,       // trigger animations on mobile devices (default is true)
-            live:         true        // act on asynchronously loaded content (default is true)
+            offset: 120,          // distance to the element when triggering the animation (default is 0)
+            mobile: false,       // trigger animations on mobile devices (default is true)
+            live: true        // act on asynchronously loaded content (default is true)
         }
     );
     wow.init();
@@ -705,7 +727,7 @@ End Contact Us
 <script src="js/custom.js"></script>
 
 <script type="text/javascript">
-    $(function(){
+    $(function () {
         /* ========================================================================= */
         /*	Contact Form
         /* ========================================================================= */
@@ -737,21 +759,21 @@ End Contact Us
                     minlength: "thats all? really?"
                 }
             },
-            submitHandler: function(form) {
+            submitHandler: function (form) {
                 $(form).ajaxSubmit({
-                    type:"POST",
+                    type: "POST",
                     data: $(form).serialize(),
-                    url:"process.php",
-                    success: function() {
+                    url: "process.php",
+                    success: function () {
                         $('#contact-form :input').attr('disabled', 'disabled');
-                        $('#contact-form').fadeTo( "slow", 0.15, function() {
+                        $('#contact-form').fadeTo("slow", 0.15, function () {
                             $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor','default');
+                            $(this).find('label').css('cursor', 'default');
                             $('#success').fadeIn();
                         });
                     },
-                    error: function() {
-                        $('#contact-form').fadeTo( "slow", 0.15, function() {
+                    error: function () {
+                        $('#contact-form').fadeTo("slow", 0.15, function () {
                             $('#error').fadeIn();
                         });
                     }
