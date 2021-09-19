@@ -21,7 +21,7 @@
 
     <!-- Google Font -->
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- CSS
     ================================================== -->
@@ -173,13 +173,11 @@ Tools
                     <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">
                         <div class="service-item">
                             <div>
-                                <%--                        <i class="fa fa-github fa-2x"></i>--%>
                                 <a href="https://github.com/tran4774/Web_Excercise_Project">
                                     <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github">
 
                                     <div class="service-desc">
                                         <h3> Github</h3>
-                                        <%--                            <p>GitHub is a web-based version-control and collaboration platform for software developers. GitHub facilitates social coding by providing a web interface to the Git code repository and management tools for collaboration. </p>--%>
                                     </div>
                                 </a>
                             </div>
@@ -193,12 +191,10 @@ Tools
                     <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
                         <div class="service-item">
                             <div>
-                                <%--                        <i class="fa fa-pencil fa-2x"></i>--%>
                                 <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png"
                                      alt="mongodb">
                                 <div class="service-desc">
                                     <h3>MongoDB</h3>
-                                    <%--                                <p>MongoDB is an open source NoSQL database management program. NoSQL is used as an alternative to traditional relational databases. NoSQL databases are quite useful for working with large sets of distributed data.</p>--%>
                                 </div>
                             </div>
                         </div>
@@ -211,12 +207,10 @@ Tools
                     <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="900ms">
                         <div class="service-item">
                             <div>
-                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
                                 <img src="https://www.logolynx.com/images/logolynx/a7/a7433954a9e82f512afa218cb96089a9.png"
                                      alt="heroku">
                                 <div class="service-desc">
                                     <h3>Heroku</h3>
-                                    <%--                                <p>Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps. Our platform is elegant, flexible, and easy to use, offering developers the simplest path to getting their apps to market.</p>--%>
                                 </div>
                             </div>
                         </div>
@@ -229,12 +223,10 @@ Tools
                     <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1200ms">
                         <div class="service-item">
                             <div>
-                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
                                 <img src="https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png"
                                      alt="Java Servlet">
                                 <div class="service-desc">
                                     <h3>Java Servlet</h3>
-                                    <%--                            <p>A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model.</p>--%>
                                 </div>
                             </div>
                         </div>
@@ -247,12 +239,10 @@ Tools
                     <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1500ms">
                         <div class="service-item">
                             <div>
-                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/512px-IntelliJ_IDEA_Icon.svg.png"
                                      alt="intelliJ">
                                 <div class="service-desc">
                                     <h3>IntelliJ</h3>
-                                    <%--                            <p>IntelliJ IDEA is a special programming environment or integrated development environment (IDE) largely meant for Java. This environment is used especially for the development of programs.</p>--%>
                                 </div>
                             </div>
                         </div>
@@ -264,12 +254,10 @@ Tools
                     <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1800ms">
                         <div class="service-item">
                             <div>
-                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/512px-Stack_Overflow_icon.svg.png"
                                      alt="intelliJ">
                                 <div class="service-desc">
                                     <h3>Stack Overflow</h3>
-                                    <%--                            <p>IntelliJ IDEA is a special programming environment or integrated development environment (IDE) largely meant for Java. This environment is used especially for the development of programs.</p>--%>
                                 </div>
                             </div>
                         </div>
@@ -307,11 +295,10 @@ Our Assignments
 
             <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
                 <ul class="text-center">
-                    <li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
-                    <li><a href="javascript:;" data-filter=".Week3-5" class="filter">Week 3-5</a></li>
-                    <li><a href="javascript:;" data-filter=".Week6-10" class="filter">Week 5-10</a></li>
-                    <li><a href="javascript:;" data-filter=".final" class="filter">Final Project</a></li>
-
+                    <li><a href="javascript:" data-filter="all" class="active filter">All</a></li>
+                    <li><a href="javascript:" data-filter=".Week3-5" class="filter">Week 3-5</a></li>
+                    <li><a href="javascript:" data-filter=".Week6-10" class="filter">Week 5-10</a></li>
+                    <li><a href="javascript:" data-filter=".final" class="filter">Final Project</a></li>
                 </ul>
             </div>
 
@@ -327,7 +314,6 @@ Our Assignments
                 <h4>Exercise 1 </h4>
                 <h5>Write a simple application with JSP and Servlet in 3 ways:</h5>
                 <p>
-
                     using only JSP,<br>
                     using only Servlet<br>
                     and combining JSP and Servlet in MVC framework
@@ -419,10 +405,9 @@ Meet Our Team
 
         <div class="col">
             <!-- single member -->
-            <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center" align="center">
+            <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center">
                 <div class="member-thumb">
-                    <img src="img/team/member-1.png"
-                         class="img-circle center-block">
+                    <img src="img/team/member-1.png" class="img-circle center-block" alt="Nguyen Bao Tran">
                     <figcaption class="overlay">
                         <h5></h5>
                         <p></p>
@@ -459,7 +444,7 @@ Meet Our Team
             <!-- end single member -->
 
             <!-- single member -->
-            <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center" align="center">
+            <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center">
                 <div class="member-thumb">
                     <img src="img/team/member-3.png" alt="Team Member" class="img-circle center-block">
                     <figcaption class="overlay">
@@ -578,7 +563,6 @@ Contact Us
 
                         <label>Email:</label>
                         <input type="email" name="email" required><br>
-                        <!-- required là thuộc tính hiện thông tin cần bắt buộc -->
 
                         <label>First Name:</label>
                         <input type="text" name="firstName" required><br>
@@ -600,8 +584,6 @@ Contact Us
                     <li><a href="https://www.facebook.com/profile.php?id=100013408530482"><i
                             class="fa fa-facebook fa-2x"></i></a></li>
                     <li><a href="https://www.instagram.com/helen_nipnay/"><i class="fa fa-instagram fa-2x"></i></a></li>
-
-
                 </ul>
             </div>
             <!-- end footer social links -->
@@ -673,8 +655,8 @@ End Contact Us
         <div class="row">
             <div class="col-md-12">
                 <p class="copyright text-center">
-                    Copyright 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved. Designed &
-                    developed by <a href="http://themefisher.com/">Themefisher</a>
+                    Copyright 2015 <a href="https://themefisher.com/">Themefisher</a>. All rights reserved. Designed &
+                    developed by <a href="https://themefisher.com/">Themefisher</a>
                     <br>Modify by Lo Tran Son
                 </p>
             </div>
@@ -703,8 +685,8 @@ End Contact Us
 <!-- jquery.appear -->
 <script src="js/jquery.appear.js"></script>
 <!-- Contact form validation -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 <!-- Google Map -->
 <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
