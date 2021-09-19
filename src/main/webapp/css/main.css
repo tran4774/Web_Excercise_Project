@@ -490,11 +490,11 @@ top: -8px;
     width: 310px;
 	font-size: 16px;
 	line-height: 24px;
+    border-radius: 170px;
     height: 310px;
     position: absolute;
     left: 9.5%;
 }
-
 
 .team-member h4 {
     color: #062033;
@@ -762,7 +762,7 @@ label.error {
   text-transform: capitalize;
 }
 
-.contact-form #form-submit {
+.contact-form #submit {
   background: url("../img/envelop.png") no-repeat scroll 0 15px transparent;
   border: 0 none;
   color: #000;
