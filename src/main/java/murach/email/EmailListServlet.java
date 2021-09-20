@@ -44,7 +44,7 @@ public class EmailListServlet extends HttpServlet {
 
         //perform action and set URL to appropriate page
         if (action.equals("join")) {
-            url = "/exc/exc1.html";  //the "join" page
+            url = "/";  //the "join" page
             RequestDispatcher dispatcher = request.getRequestDispatcher(url);
             dispatcher.forward(request, response);
         } else if (action.equals("add")) {

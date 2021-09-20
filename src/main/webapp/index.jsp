@@ -260,10 +260,10 @@ Our Assignments
                 JSONArray exercises = (JSONArray) parser.parse(file);
                 for (Object obj : exercises) {
                     JSONObject exercise = (JSONObject) obj;%>
-        <figure class="mix work-item <%=exercise.get("week")%>">
+        <figure class="mix work-item <%=exercise.get("week")%>" id="<%=exercise.get("id")%>">
             <img src="<%=exercise.get("image")%>" alt="">
             <figcaption class="overlay">
-                <a class="fancybox" rel="works" href="<%=exercise.get("linkToExercise")%>"><i
+                <a rel="works" href="<%=exercise.get("linkToExercise")%>"><i
                         class="fa fa-eye fa-lg"></i></a>
                 <%=exercise.get("description")%>
             </figcaption>

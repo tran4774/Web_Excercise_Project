@@ -1,8 +1,9 @@
 [
   {
+    "id": "exc1",
     "week": "Week3-5",
     "image": "img/works/item-1.jpg.png",
-    "linkToExercise": "/EmailListServlet",
+    "linkToExercise": "#contact",
     "description": "<h4>Exercise 1</h4><h5>Write a simple application with JSP and Servlet in 3 ways:</h5><p>using only JSP,<br>using only Servlet<br>and combining JSP and Servlet in MVC framework</p>"
   },
   {
