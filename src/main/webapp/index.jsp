@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="css/media-queries.css">
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-
+    <%--TagLib and all Library JSP--%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <%@ page import="javax.*" %>
     <%@ page import="org.json.simple.parser.JSONParser" %>
@@ -101,10 +101,11 @@ Fixed Navigation
                 <li><a href="#features">Tools</a></li>
                 <li><a href="#works">Assignments</a></li>
                 <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li id="test"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <!-- /main nav -->
+
     </div>
 </header>
 <!--
@@ -403,7 +404,7 @@ Contact Us
             </div>
 
             <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
-                <p>This is info to contact us</p>
+                <p>Leave your information and we contact to you</p>
             </div>
 
             <!-- contact address -->
@@ -420,36 +421,25 @@ Contact Us
             <!-- contact form -->
             <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms"
                  data-wow-delay="300ms">
-                <div class="contact-form">
-                    <form action="EmailListServlet" method="post">
-                        <input type="hidden" name="action" value="add">
+                <div id="contact-form-div">
+                    <form id="show-guide" action="EmailListServlet" method="post"  class="contact-form">
+                        <input class="contact-input" type="hidden" name="action" value="add" >
 
-                        <label>Email:</label>
-                        <input type="email" name="email" required><br>
+                        <label class="contact-label"> <i>Email:</i> </label>
+                        <input type="email" name="email" class="contact-mail"  placeholder="yourmail@gmail.com" required><br>
 
-                        <label>First Name:</label>
-                        <input type="text" name="firstName" required><br>
+                        <label class="contact-label"> <i>First Name:</i> </label>
+                        <input  type="text" name="firstName" class="contact-fname" placeholder="First name" required><br>
 
-                        <label>Last Name:</label>
-                        <input type="text" name="lastName" required><br>
+                        <label class="contact-label"> <i>Last Name:</i> </label>
+                        <input type="text" name="lastName" class="contact-lname" placeholder="Last name" required><br>
 
-                        <label>&nbsp;</label>
-                        <input type="submit" value="Join Now" id="submit"><br>
+                        <input  type="submit" value="Join Now" id="submit"> <br>
                     </form>
                 </div>
             </div>
             <!-- end contact form -->
 
-            <!-- footer social links -->
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms"
-                 data-wow-delay="600ms">
-                <ul class="footer-social">
-                    <li><a href="https://www.facebook.com/profile.php?id=100013408530482"><i
-                            class="fa fa-facebook fa-2x"></i></a></li>
-                    <li><a href="https://www.instagram.com/helen_nipnay/"><i class="fa fa-instagram fa-2x"></i></a></li>
-                </ul>
-            </div>
-            <!-- end footer social links -->
         </div>
     </div>
 
@@ -618,6 +608,25 @@ End Contact Us
             }
         });
     });
+</script>
+
+<script>
+    var show= document.getElementById("show-guide")
+    var button=document.getElementById("ex1")
+    function flare (){
+
+        show.style.animationName="focus";
+        show.style.animationDuration="8s";
+
+    }
+    button.addEventListener("click", function (){
+        flare()
+        setTimeout(function (){show.style.animationName="none";},8000)
+
+    })
+
+
+
 </script>
 
 </body>
