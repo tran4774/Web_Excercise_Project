@@ -421,7 +421,7 @@ Contact Us
             <!-- contact form -->
             <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms"
                  data-wow-delay="300ms">
-                <div id="contact-form-div">
+                <div id="contact-form-div" >
                     <form id="show-guide" action="EmailListServlet" method="post"  class="contact-form">
                         <input class="contact-input" type="hidden" name="action" value="add" >
 
@@ -436,6 +436,7 @@ Contact Us
 
                         <input  type="submit" value="Join Now" id="submit"> <br>
                     </form>
+                    <span class="tooltiptext">Tooltip text</span>
                 </div>
             </div>
             <!-- end contact form -->

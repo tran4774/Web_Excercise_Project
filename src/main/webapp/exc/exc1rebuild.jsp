@@ -41,27 +41,32 @@
     <div class="wrap-contact100">
         <form class="contact100-form validate-form">
                 <span class="contact100-form-title">
-					Thanks for joining our email list
+                        Thanks for joining our email list
 
-				</span>
-                <h4> Here is the information that you enter</h4>
+                    </span>
+            <h4> Here is the information that you enter</h4>
 
 
 
-            <div class="wrap-input100 validate-input" data-validate="Message is required">
-                <span class="label-input100">Message</span>
-                <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
-                <span class="focus-input100"></span>
+            <div class="show-info">
+                <div class="full-name">
+                    <span style="margin-right: 10px;">First name:</span> <span class="info-name">${firstName}</span>
+                    <span style="margin-left: 10px;">Last name:</span> <span class="info-name">${lastName}</span> <br>
+                </div>
+                <span style="margin-right: 15px;">Email:</span> <span class="info-name">${email}</span> <br>
+
+
+
             </div>
 
             <div class="container-contact100-form-btn">
                 <div class="wrap-contact100-form-btn">
                     <div class="contact100-form-bgbtn"></div>
                     <button class="contact100-form-btn">
-							<span>
-								Submit
-								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-							</span>
+                                <span>
+                                    Submit
+                                    <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                                </span>
                     </button>
                 </div>
             </div>
@@ -108,7 +113,6 @@
 
     gtag('config', 'UA-23581568-13');
 </script>
-
 </body>
 
 </html>
