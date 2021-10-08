@@ -611,17 +611,17 @@ End Contact Us
 </script>
 
 <script>
-    var show= document.getElementById("show-guide")
-    var button=document.getElementById("ex1")
+    var show= document.getElementById("show-guide");
+    var button=document.getElementById("exc1");
     function flare (){
 
         show.style.animationName="focus";
         show.style.animationDuration="8s";
 
     }
-    button.addEventListener("click", function (){
-        flare()
-        setTimeout(function (){show.style.animationName="none";},8000)
+    button.addEventListener("click", function(){
+        flare();
+        setTimeout(function (){show.style.animationName="none";},8000);
 
     })
 

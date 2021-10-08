@@ -751,12 +751,10 @@ ex1:hover{
 }
 @keyframes focus {
     0% {background-color: #c3ffcd;}
-
     20% {background-color: #affff1;}
     50% {background-color: transparent;}
     80% {background-color: #affff1;}
     100% {background-color: transparent;}
-
 }
 
 .contact-form h3 {
