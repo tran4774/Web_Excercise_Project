@@ -63,7 +63,7 @@ public class EmailListServlet extends HttpServlet {
 
             //set User object in request object and set URL
             // request.setAttribute("user", user);
-            url = "/exc/exc1end.jsp"; //the "thanks" page
+            url = "/exc/exc1rebuild.jsp"; //the "thanks" page
             getServletContext()
                     .getRequestDispatcher(url)
                     .forward(request, response);
