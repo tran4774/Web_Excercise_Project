@@ -422,7 +422,7 @@ Contact Us
             <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms"
                  data-wow-delay="300ms">
                 <div id="contact-form-div" >
-                    <form id="show-guide" action="EmailListServlet" method="post"  class="contact-form">
+                    <form id="show-guide" action="/exc/ch05_ex1/EmailListServlet" method="post"  class="contact-form">
                         <input class="contact-input" type="hidden" name="action" value="add" >
 
                         <label class="contact-label"> <i>Email:</i> </label>
