@@ -245,7 +245,7 @@ Our Assignments
             <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
                 <ul class="text-center">
                     <li><a href="javascript:" data-filter="all" class="active filter">All</a></li>
-                    <li><a href="javascript:" data-filter=".Week3-5" class="filter">Week 3-5</a></li>
+                    <li><a href="javascript:" data-filter=".Week3-5s" class="filter">Week 3-5</a></li>
                     <li><a href="javascript:" data-filter=".Week6-10" class="filter">Week 5-10</a></li>
                     <li><a href="javascript:" data-filter=".final" class="filter">Final Project</a></li>
                 </ul>

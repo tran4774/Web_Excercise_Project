@@ -1,13 +1,13 @@
 [
   {
     "id": "exc1",
-    "week": "Week3-5",
+    "week": "Week3-5s",
     "image": "img/works/item-1.jpg.png",
     "linkToExercise": "#contact",
     "description": "<h4>Exercise 1</h4><h5>Write a simple application with JSP and Servlet in 3 ways:</h5><p>using only JSP,<br>using only Servlet<br>and combining JSP and Servlet in MVC framework</p>"
   },
   {
-    "week": "Week3-5",
+    "week": "Week3-5s",
     "image": "img/works/image-2.png",
     "linkToExercise": "#",
     "description": "<h4>Exercise 2</h4><h5>Group work (<=3 students/group)</h5><p>Step 1: Think and discuss about an web application that may be needed for UTE (faculty, department) or others<br>Step 2: Get requirements from for web application in B1.<br>Step 3: Analyze requirements and design functional diagrams for the above application.</p>"
