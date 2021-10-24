@@ -41,12 +41,12 @@
   },
   {
     "chapter": "Chapter9",
-    "linkToExercise": "#",
+    "linkToExercise": "/exc/ch09_ex1/",
     "description": "CHAPTER9_EX1"
   },
   {
     "chapter": "Chapter9",
-    "linkToExercise": "#",
+    "linkToExercise": "/exc/ch09_ex2/loadProducts",
     "description": "CHAPTER9_EX2"
   },
   {
