@@ -36,6 +36,9 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- media-queries -->
     <link rel="stylesheet" href="css/media-queries.css">
+    <!-- cyberpunk button -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <%--TagLib and all Library JSP--%>
@@ -245,8 +248,11 @@ Our Assignments
             <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
                 <ul class="text-center">
                     <li><a href="javascript:" data-filter="all" class="active filter">All</a></li>
-                    <li><a href="javascript:" data-filter=".Week3-5s" class="filter">Week 3-5</a></li>
-                    <li><a href="javascript:" data-filter=".Week6-10" class="filter">Week 5-10</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter5" class="filter">Chapter 5</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter6" class="filter">Chapter 6</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter7" class="filter">Chapter 7</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter8" class="filter">Chapter 8</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter9" class="filter">Chapter 9</a></li>
                     <li><a href="javascript:" data-filter=".final" class="filter">Final Project</a></li>
                 </ul>
             </div>
@@ -260,14 +266,9 @@ Our Assignments
                 JSONArray exercises = (JSONArray) parser.parse(file);
                 for (Object obj : exercises) {
                     JSONObject exercise = (JSONObject) obj;%>
-        <figure class="mix work-item <%=exercise.get("week")%>" id="<%=exercise.get("id")%>">
-            <img src="<%=exercise.get("image")%>" alt="">
-            <figcaption class="overlay">
-                <a rel="works" href="<%=exercise.get("linkToExercise")%>"><i
-                        class="fa fa-eye fa-lg"></i></a>
-                <%=exercise.get("description")%>
-            </figcaption>
-        </figure>
+            <figure class="mix work-item <%=exercise.get("chapter")%>">
+                <a href="<%=exercise.get("linkToExercise")%>"><button class="cyberpunk"> <%=exercise.get("description")%> </button></a>
+            </figure>
         <%
                 }
             } catch (Exception ex) {

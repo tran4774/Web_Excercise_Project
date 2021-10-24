@@ -1,39 +1,57 @@
 [
   {
-    "id": "exc1",
-    "week": "Week3-5s",
-    "image": "img/works/item-1.jpg.png",
-    "linkToExercise": "#contact",
-    "description": "<h4>Exercise 1</h4><h5>Write a simple application with JSP and Servlet in 3 ways:</h5><p>using only JSP,<br>using only Servlet<br>and combining JSP and Servlet in MVC framework</p>"
+    "chapter": "Chapter5",
+    "linkToExercise": "/exc/ch05_ex1/",
+    "description": "CHAPTER5_EX1"
   },
   {
-    "week": "Week3-5s",
-    "image": "img/works/image-2.png",
-    "linkToExercise": "#",
-    "description": "<h4>Exercise 2</h4><h5>Group work (<=3 students/group)</h5><p>Step 1: Think and discuss about an web application that may be needed for UTE (faculty, department) or others<br>Step 2: Get requirements from for web application in B1.<br>Step 3: Analyze requirements and design functional diagrams for the above application.</p>"
+    "chapter": "Chapter5",
+    "linkToExercise": "/exc/ch05_ex2/",
+    "description": "CHAPTER5_EX2"
   },
   {
-    "week": "Week6-10",
-    "image": "img/works/image-3.png",
-    "linkToExercise": "#",
-    "description": "<h4>Exercise 3</h4><h5>Group work (<=3 students/group)</h5><p>Design prototype (UI- User interface) for web application in Exercise #2.</p>"
+    "chapter": "Chapter6",
+    "linkToExercise": "/exc/ch06_ex1/",
+    "description": "CHAPTER6_EX1"
   },
   {
-    "week": "Week6-10",
-    "image": "img/works/image-4.png",
-    "linkToExercise": "#",
-    "description": "<h4>Exercise 4</h4><h5>Group work (<=3 students/group)</h5><p>Complete the user interface for web application in Exercise #3 according to the teacher's suggestions.</p>"
+    "chapter": "Chapter6",
+    "linkToExercise": "/exc/ch06_ex2/",
+    "description": "CHAPTER6_EX2"
   },
   {
-    "week": "Week6-10",
-    "image": "img/works/image-5.png",
-    "linkToExercise": "#",
-    "description": "<h4>Exercise 5</h4><h5>Group work (<=3 students/group)</h5><p>Using JSP, JavaScript, Jquery, Bootstrap... to design the website interface<br>(according to the prototype in Exercise #4)</p>"
+    "chapter": "Chapter7",
+    "linkToExercise": "/exc/ch07_ex1/",
+    "description": "CHAPTER7_EX1"
   },
   {
-    "week": "final",
-    "image": "img/works/final.png",
+    "chapter": "Chapter7",
+    "linkToExercise": "/exc/ch07_ex2/",
+    "description": "CHAPTER7_EX2"
+  },
+  {
+    "chapter": "Chapter7",
+    "linkToExercise": "/exc/ch07_ex3/",
+    "description": "CHAPTER7_EX3"
+  },
+  {
+    "chapter": "Chapter8",
+    "linkToExercise": "/exc/ch08_ex1/",
+    "description": "CHAPTER8_EX1"
+  },
+  {
+    "chapter": "Chapter9",
     "linkToExercise": "#",
-    "description": "<h4>Final Project</h4><h5>Group work (<=3 students/group)</h5><p>-Implement the complete web application based on all mini-exercises (Exercise #1 to #5)<br>-Deploy web application to a free host (eg Heroku or any other hosting)</p>"
+    "description": "CHAPTER9_EX1"
+  },
+  {
+    "chapter": "Chapter9",
+    "linkToExercise": "#",
+    "description": "CHAPTER9_EX2"
+  },
+  {
+    "chapter": "final",
+    "linkToExercise": "#",
+    "description": "Final Project"
   }
 ]
