@@ -1,0 +1,38 @@
+[
+  {
+    "link": "https://github.com/tran4774/Web_Excercise_Project",
+    "imageSource": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+    "alt": "github",
+    "title": "Github"
+  },
+  {
+    "link": "#",
+    "imageSource": "https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png",
+    "alt": "mongodb",
+    "title": "MongoDB"
+  },
+  {
+    "link": "#",
+    "imageSource": "https://www.logolynx.com/images/logolynx/a7/a7433954a9e82f512afa218cb96089a9.png",
+    "alt": "heroku",
+    "title": "Heroku"
+  },
+  {
+    "link": "#",
+    "imageSource": "https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png",
+    "alt": "Java Servlet",
+    "title": "Java Servlet"
+  },
+  {
+    "link": "#",
+    "imageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/512px-IntelliJ_IDEA_Icon.svg.png",
+    "alt": "intelliJ",
+    "title": "IntelliJ"
+  },
+  {
+    "link": "#",
+    "imageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/512px-Stack_Overflow_icon.svg.png",
+    "alt": "stackoveflow",
+    "title": "Stack Overflow"
+  }
+]

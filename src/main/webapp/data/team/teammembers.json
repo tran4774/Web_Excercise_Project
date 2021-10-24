@@ -1,0 +1,26 @@
+[
+  {
+    "image": "img/team/member-1.png",
+    "alt": "Lo Minh Phat",
+    "facebook": "https://www.facebook.com/profile.php?id=100013408530482",
+    "github": "https://github.com/FaithLopper",
+    "devname": "Lô Minh Phát",
+    "description": "Frontend & DB Developer"
+  },
+  {
+    "image": "img/team/member-2.png",
+    "alt": "Nguyen Bao Tran",
+    "facebook": "https://www.facebook.com/tran4774/",
+    "github": "https://github.com/tran4774",
+    "devname": "Nguyễn Bảo Trấn",
+    "description": "Backend & DB Developer"
+  },
+  {
+    "image": "img/team/member-3.png",
+    "alt": "Nguyen Van Son",
+    "facebook": "https://www.facebook.com/Diickie01",
+    "github": "https://github.com/son17112001",
+    "devname": "Nguyễn Văn Son",
+    "description": "Frontend Designer, Developer"
+  }
+]

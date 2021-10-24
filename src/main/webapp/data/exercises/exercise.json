@@ -1,0 +1,57 @@
+[
+  {
+    "chapter": "Chapter5",
+    "linkToExercise": "/exc/ch05_ex1/",
+    "description": "CHAPTER5_EX1"
+  },
+  {
+    "chapter": "Chapter5",
+    "linkToExercise": "/exc/ch05_ex2/",
+    "description": "CHAPTER5_EX2"
+  },
+  {
+    "chapter": "Chapter6",
+    "linkToExercise": "/exc/ch06_ex1/",
+    "description": "CHAPTER6_EX1"
+  },
+  {
+    "chapter": "Chapter6",
+    "linkToExercise": "/exc/ch06_ex2/",
+    "description": "CHAPTER6_EX2"
+  },
+  {
+    "chapter": "Chapter7",
+    "linkToExercise": "/exc/ch07_ex1/",
+    "description": "CHAPTER7_EX1"
+  },
+  {
+    "chapter": "Chapter7",
+    "linkToExercise": "/exc/ch07_ex2/",
+    "description": "CHAPTER7_EX2"
+  },
+  {
+    "chapter": "Chapter7",
+    "linkToExercise": "/exc/ch07_ex3/",
+    "description": "CHAPTER7_EX3"
+  },
+  {
+    "chapter": "Chapter8",
+    "linkToExercise": "/exc/ch08_ex1/",
+    "description": "CHAPTER8_EX1"
+  },
+  {
+    "chapter": "Chapter9",
+    "linkToExercise": "#",
+    "description": "CHAPTER9_EX1"
+  },
+  {
+    "chapter": "Chapter9",
+    "linkToExercise": "#",
+    "description": "CHAPTER9_EX2"
+  },
+  {
+    "chapter": "final",
+    "linkToExercise": "#",
+    "description": "Final Project"
+  }
+]

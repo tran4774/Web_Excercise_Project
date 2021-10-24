@@ -387,6 +387,10 @@ top: -8px;
     width: 25%;
     position: relative;
 }
+.project-wrapper img:hover{
+    cursor: pointer;
+}
+
 
 .work-item > img {
   display: block;
@@ -462,9 +466,23 @@ top: -8px;
     text-align: left;
 
 }
+.project-wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(5%);
+    margin-right: calc(5%);
+}
+.project-wrapper figure{
+    /*flex-basis: calc(100%/3 - 6px);*/
+    /*margin-left: 15px;*/
+    padding-top: 15px;
+    padding-left: 20px;
+}
 
-
-
+ex1:hover{
+    cursor: pointer;
+}
 /*=========================================
 	Our Team Member
 ==========================================*/
@@ -473,6 +491,7 @@ top: -8px;
     width: 300px;
   position: relative;
   display: contents;
+   color: #eaffa2;
 }
 .member-thumb img {
     width: 300px;
@@ -719,7 +738,26 @@ top: -8px;
   line-height: 24px;
 }
 
-.contact-form {}
+.contact-form {
+    display: inline-block;
+    padding: 24px;
+
+    box-sizing: border-box;
+    background-clip: border-box;
+    background-color: transparent;
+
+    transition: background-color 3s;
+    margin-left: 50px;
+
+
+}
+@keyframes focus {
+    0% {background-color: #c3ffcd;}
+    20% {background-color: #affff1;}
+    50% {background-color: transparent;}
+    80% {background-color: #affff1;}
+    100% {background-color: transparent;}
+}
 
 .contact-form h3 {
   color: #062033;
@@ -727,6 +765,7 @@ top: -8px;
   font-weight: 700;
   line-height: 32px;
   margin-bottom: 25px;
+
 }
 
 .contact-form .input-group {
@@ -763,14 +802,22 @@ label.error {
 }
 
 .contact-form #submit {
-  background: url("../img/envelop.png") no-repeat scroll 0 15px transparent;
-  border: 0 none;
-  color: #000;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 10px;
-  text-align: right;
-  width: 150px;
+
+border: none;
+    color: whitesmoke;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    margin:10px 0 0 160px;
+    background-color: #1ea78d;
+    font-weight: bolder;
+
+}
+.contact-form #submit:hover{
+    background-color: #5b646e;
+    color: whitesmoke;
 }
 
 .footer-social {
@@ -788,7 +835,66 @@ label.error {
   width: 100%;
 }
 
+.contact-input{
 
+
+}
+
+.contact-form i{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 0 5px;
+    margin-right:15px
+}
+.contact-mail{
+    margin-left: 50px;
+    width: 250px;
+}
+.contact-fname{
+    margin-left: 12px;
+}
+.contact-lname{
+    margin-left: 14px;
+}
+.contact-form input{
+    padding: 3px 0;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0eb493;
+    margin-bottom: 2px;
+    padding-left: 5px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+#contact-form-div:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+#submit{
+
+}
 
 /*=========================================
 	Contact Us
@@ -872,4 +978,92 @@ label.error {
   position: fixed;
   right: 25px;
   z-index: 9;
+}
+
+/*custom cyberpunk button*/
+.cyberpunk, .cyberpunk::after {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+}
+
+.cyberpunk::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+
+    content: 'ASSIGNMENTS';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+}
+
+.cyberpunk:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
 }

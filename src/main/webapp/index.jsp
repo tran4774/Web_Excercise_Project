@@ -15,13 +15,12 @@
     <meta name="keywords"
           content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
     <meta name="author" content="Muhammad Morshed">
-    <%@ page contentType="text/html; charset=UTF-8" %>
+    <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Font -->
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- CSS
     ================================================== -->
@@ -37,12 +36,38 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- media-queries -->
     <link rel="stylesheet" href="css/media-queries.css">
-
+    <!-- cyberpunk button -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+    <%--TagLib and all Library JSP--%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@ page import="javax.*" %>
+    <%@ page import="org.json.simple.parser.JSONParser" %>
+    <%@ page import="org.json.simple.JSONObject" %>
+    <%@ page import="org.json.simple.JSONArray" %>
+    <%@ page import="java.nio.charset.StandardCharsets" %>
+    <%@ page import="java.io.FileReader" %>
+    <%@ page import="java.nio.charset.Charset" %>
 
 </head>
 <body id="body">
+
+<!-- function JSP -->
+<%!
+    public static FileReader readFile(HttpServletRequest request, String path, Charset charset) {
+        try {
+            return new FileReader(
+                    request.getServletContext().getRealPath(path),
+                    charset
+            );
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
+%>
 
 <!-- preloader -->
 <div id="preloader">
@@ -79,7 +104,7 @@ Fixed Navigation
                 <li><a href="#features">Tools</a></li>
                 <li><a href="#works">Assignments</a></li>
                 <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li id="test"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <!-- /main nav -->
@@ -133,8 +158,6 @@ Home Slider
                     <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">
                         <span>Team</span></h2>
                     <h3 data-wow-duration="500ms" class="wow slideInLeft animated">LO TRAN SON</h3>
-
-
                     <ul class="social-links text-center">
                         <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
                         <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -144,10 +167,8 @@ Home Slider
                 </div>
             </div>
             <!-- end single slide -->
-
         </div>
         <!-- End Wrapper for slides -->
-
     </div>
 </section>
 
@@ -162,122 +183,41 @@ Tools
 <section id="features" class="features">
     <div class="container">
         <div class="row">
-
             <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="50ms">
                 <h2>Tools</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
             </div>
             <div class="row">
                 <div class="col">
-                    <!-- service item -->
-                    <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <%
+                        JSONParser parser = new JSONParser();
+                        try (FileReader file = readFile(request, "/data/tools/tools.json", StandardCharsets.UTF_8)) {
+                            JSONArray tools = (JSONArray) parser.parse(file);
+                            int dataWowDelay = 300;
+                            for (Object obj : tools) {
+                                JSONObject tool = (JSONObject) obj;%>
+                    <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="<%=dataWowDelay%>ms">
                         <div class="service-item">
                             <div>
-                                <%--                        <i class="fa fa-github fa-2x"></i>--%>
-                                <a href="https://github.com/tran4774/Web_Excercise_Project">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github">
-
+                                <a href="<%=tool.get("link")%>">
+                                    <img src="<%=tool.get("imageSource")%>" alt="<%=tool.get("alt")%>">
                                     <div class="service-desc">
-                                        <h3> Github</h3>
-                                        <%--                            <p>GitHub is a web-based version-control and collaboration platform for software developers. GitHub facilitates social coding by providing a web interface to the Git code repository and management tools for collaboration. </p>--%>
+                                        <h3><%=tool.get("title")%>
+                                        </h3>
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <!-- end service item -->
+                    <%
+                                dataWowDelay += 300;
+                            }
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
+                    %>
                 </div>
-
-                <div class="col">
-                    <!-- service item -->
-                    <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-                        <div class="service-item">
-                            <div>
-                                <%--                        <i class="fa fa-pencil fa-2x"></i>--%>
-                                <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png"
-                                     alt="mongodb">
-                                <div class="service-desc">
-                                    <h3>MongoDB</h3>
-                                    <%--                                <p>MongoDB is an open source NoSQL database management program. NoSQL is used as an alternative to traditional relational databases. NoSQL databases are quite useful for working with large sets of distributed data.</p>--%>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end service item -->
-                </div>
-
-                <div class="col">
-                    <!-- service item -->
-                    <div class="col-md-4 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="900ms">
-                        <div class="service-item">
-                            <div>
-                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
-                                <img src="https://www.logolynx.com/images/logolynx/a7/a7433954a9e82f512afa218cb96089a9.png"
-                                     alt="heroku">
-                                <div class="service-desc">
-                                    <h3>Heroku</h3>
-                                    <%--                                <p>Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps. Our platform is elegant, flexible, and easy to use, offering developers the simplest path to getting their apps to market.</p>--%>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end service item -->
-                </div>
-
-                <div class="col">
-                    <!-- service item -->
-                    <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1200ms">
-                        <div class="service-item">
-                            <div>
-                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
-                                <img src="https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png"
-                                     alt="Java Servlet">
-                                <div class="service-desc">
-                                    <h3>Java Servlet</h3>
-                                    <%--                            <p>A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model.</p>--%>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end service item -->
-                </div>
-
-                <div class="col">
-                    <!-- service item -->
-                    <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1500ms">
-                        <div class="service-item">
-                            <div>
-                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/512px-IntelliJ_IDEA_Icon.svg.png"
-                                     alt="intelliJ">
-                                <div class="service-desc">
-                                    <h3>IntelliJ</h3>
-                                    <%--                            <p>IntelliJ IDEA is a special programming environment or integrated development environment (IDE) largely meant for Java. This environment is used especially for the development of programs.</p>--%>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <!-- service item -->
-                    <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1800ms">
-                        <div class="service-item">
-                            <div>
-                                <%--                        <i class="fa fa-bullhorn fa-2x"></i>--%>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/512px-Stack_Overflow_icon.svg.png"
-                                     alt="intelliJ">
-                                <div class="service-desc">
-                                    <h3>Stack Overflow</h3>
-                                    <%--                            <p>IntelliJ IDEA is a special programming environment or integrated development environment (IDE) largely meant for Java. This environment is used especially for the development of programs.</p>--%>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
         </div>
     </div>
 </section>
@@ -307,96 +247,35 @@ Our Assignments
 
             <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
                 <ul class="text-center">
-                    <li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
-                    <li><a href="javascript:;" data-filter=".Week3-5" class="filter">Week 3-5</a></li>
-                    <li><a href="javascript:;" data-filter=".Week6-10" class="filter">Week 5-10</a></li>
-                    <li><a href="javascript:;" data-filter=".final" class="filter">Final Project</a></li>
-
+                    <li><a href="javascript:" data-filter="all" class="active filter">All</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter5" class="filter">Chapter 5</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter6" class="filter">Chapter 6</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter7" class="filter">Chapter 7</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter8" class="filter">Chapter 8</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter9" class="filter">Chapter 9</a></li>
+                    <li><a href="javascript:" data-filter=".final" class="filter">Final Project</a></li>
                 </ul>
             </div>
-
         </div>
     </div>
 
     <div class="project-wrapper">
-
-        <figure class="mix work-item Week3-5">
-            <img src="img/works/item-1.jpg.png" alt="">
-            <figcaption class="overlay">
-                <a class="fancybox" rel="works" href="/EmailListServlet"><i class="fa fa-eye fa-lg"></i></a>
-                <h4>Exercise 1 </h4>
-                <h5>Write a simple application with JSP and Servlet in 3 ways:</h5>
-                <p>
-
-                    using only JSP,<br>
-                    using only Servlet<br>
-                    and combining JSP and Servlet in MVC framework
-                </p>
-            </figcaption>
-        </figure>
-
-        <figure class="mix work-item Week3-5">
-            <img src="img/works/image-2.png" alt="">
-            <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-2.jpg"><i
-                        class="fa fa-eye fa-lg"></i></a>
-                <h4>Exercise 2</h4>
-                <h5>Group work (<=3 students/group) </h5>
-                <p>Step 1: Think and discuss about an web application that may be needed for UTE (faculty, department)
-                    or others
-                    <br>
-                    Step 2: Get requirements from for web application in B1. <br>
-                    Step 3: Analyze requirements and design functional diagrams for the above application.</p>
-            </figcaption>
-        </figure>
-
-        <figure class="mix work-item Week6-10">
-            <img src="img/works/image-3.png" alt="">
-            <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/image-3.png"><i
-                        class="fa fa-eye fa-lg"></i></a>
-                <h4>Exercise 3</h4>
-                <h5>Group work (<=3 students/group) </h5>
-                <p>Design prototype (UI- User interface) for web application in Exercise #2.</p>
-            </figcaption>
-        </figure>
-
-        <figure class="mix work-item Week6-10">
-            <img src="img/works/image-4.png" alt="">
-            <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/image-4.png"><i
-                        class="fa fa-eye fa-lg"></i></a>
-                <h4>Exercise 4</h4>
-                <h5>Group work (<=3 students/group) </h5>
-                <p>Complete the user interface for web application in Exercise #3 according to the teacher's
-                    suggestions.</p>
-            </figcaption>
-        </figure>
-
-        <figure class="mix work-item Week6-10">
-            <img src="img/works/image-5.png" alt="">
-            <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/image-5.png"><i
-                        class="fa fa-eye fa-lg"></i></a>
-                <h4>Exercise 5</h4>
-                <h5>Group work (<=3 students/group) </h5>
-                <p>Using JSP, JavaScript, Jquery, Bootstrap... to design the website interface <br>
-                    (according to the prototype in Exercise #4)</p>
-            </figcaption>
-        </figure>
-
-        <figure class="mix work-item final">
-            <img src="img/works/final.png" alt="">
-            <figcaption class="overlay">
-                <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/final.png"><i
-                        class="fa fa-eye fa-lg"></i></a>
-                <h4>Final Project</h4>
-                <h5>Group work (<=3 students/group) </h5>
-                <p>-Implement the complete web application based on all mini-exercises (Exercise #1 to #5)
-                    <br>
-                    -Deploy web application to a free host (eg Heroku or any other hosting)</p>
-            </figcaption>
-        </figure>
+        <!-- loop render Exercises -->
+        <%
+            try (FileReader file = readFile(request, "/data/exercises/exercise.json", StandardCharsets.UTF_8)) {
+                JSONArray exercises = (JSONArray) parser.parse(file);
+                for (Object obj : exercises) {
+                    JSONObject exercise = (JSONObject) obj;%>
+            <figure class="mix work-item <%=exercise.get("chapter")%>">
+                <a href="<%=exercise.get("linkToExercise")%>"><button class="cyberpunk"> <%=exercise.get("description")%> </button></a>
+            </figure>
+        <%
+                }
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        %>
+        <!-- end loop render Exercises -->
     </div>
 </section>
 
@@ -411,71 +290,44 @@ Meet Our Team
 <section id="team" class="team">
     <div class="container">
 
-
         <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms" style="padding-bottom: 30px">
             <h2>Meet Our Team</h2>
             <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
         </div>
 
         <div class="col">
-            <!-- single member -->
-            <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center" align="center">
-                <div class="member-thumb">
-                    <img src="img/team/member-1.png"
-                         class="img-circle center-block">
-                    <figcaption class="overlay">
-                        <h5></h5>
-                        <p></p>
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </div>
-                <h4>Lô Minh Phát</h4>
-                <span>Frontend & DB Developer</span>
-            </figure>
-            <!-- end single member -->
-
-            <!-- single member -->
+            <!-- loop render single member -->
+            <%
+                try (FileReader file = readFile(request, "/data/team/teammembers.json", StandardCharsets.UTF_8)) {
+                    JSONArray members = (JSONArray) parser.parse(file);
+                    for (Object obj : members) {
+                        JSONObject member = (JSONObject) obj;%>
             <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center">
                 <div class="member-thumb ">
-                    <img src="img/team/member-2.png" alt="Team Member"
+                    <img src="<%=member.get("image")%>" alt="<%=member.get("alt")%>"
                          class="img-circle center-block">
                     <figcaption class="overlay">
                         <h5></h5>
                         <p></p>
                         <ul class="social-links text-center">
                             <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                            <li><a href="<%=member.get("facebook")%>"><i class="fa fa-facebook fa-lg"></i></a></li>
+                            <li><a href="<%=member.get("github")%>"><i class="fa fa-github fa-lg"
+                                                                       style="font-size:2.7rem"></i></a></li>
                         </ul>
                     </figcaption>
                 </div>
-                <h4>Nguyễn Bảo Trấn</h4>
-                <span>Backend & DB Developer</span>
+                <h4><%=member.get("devname")%>
+                </h4>
+                <span><%=member.get("description")%></span>
             </figure>
-            <!-- end single member -->
-
-            <!-- single member -->
-            <figure class="team-member col-md-4 col-sm-6 col-xs-12 text-center" align="center">
-                <div class="member-thumb">
-                    <img src="img/team/member-3.png" alt="Team Member" class="img-circle center-block">
-                    <figcaption class="overlay">
-                        <h5></h5>
-                        <p></p>
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </div>
-                <h4>Nguyễn Văn Sơn</h4>
-                <span>Frontend Designer, Developer</span>
-            </figure>
-            <!-- end single member -->
+            <%
+                    }
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            %>
+            <!-- end loop render single member -->
         </div>
     </div>
 </section>
@@ -529,10 +381,8 @@ Some fun facts
                     </div>
                 </div>
                 <%--End Skill Bar--%>
-
             </div>
         </div>
-
     </div>
 </section>
 
@@ -555,7 +405,7 @@ Contact Us
             </div>
 
             <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
-                <p>This is info to contact us</p>
+                <p>Leave your information and we contact to you</p>
             </div>
 
             <!-- contact address -->
@@ -572,39 +422,25 @@ Contact Us
             <!-- contact form -->
             <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms"
                  data-wow-delay="300ms">
-                <div class="contact-form">
-                    <form action="EmailListServlet" method="post">
-                        <input type="hidden" name="action" value="add">
+                <div id="contact-form-div" >
+                    <form id="show-guide" action="/exc/ch05_ex1/EmailListServlet" method="post"  class="contact-form">
+                        <input class="contact-input" type="hidden" name="action" value="add" >
 
-                        <label>Email:</label>
-                        <input type="email" name="email" required><br>
-                        <!-- required là thuộc tính hiện thông tin cần bắt buộc -->
+                        <label class="contact-label"> <i>Email:</i> </label>
+                        <input type="email" name="email" class="contact-mail"  placeholder="yourmail@gmail.com" required><br>
 
-                        <label>First Name:</label>
-                        <input type="text" name="firstName" required><br>
+                        <label class="contact-label"> <i>First Name:</i> </label>
+                        <input  type="text" name="firstName" class="contact-fname" placeholder="First name" required><br>
 
-                        <label>Last Name:</label>
-                        <input type="text" name="lastName" required><br>
+                        <label class="contact-label"> <i>Last Name:</i> </label>
+                        <input type="text" name="lastName" class="contact-lname" placeholder="Last name" required><br>
 
-                        <label>&nbsp;</label>
-                        <input type="submit" value="Join Now" id="submit"><br>
+                        <input  type="submit" value="Join Now" id="submit"> <br>
                     </form>
+                    <span class="tooltiptext">Tooltip text</span>
                 </div>
             </div>
             <!-- end contact form -->
-
-            <!-- footer social links -->
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms"
-                 data-wow-delay="600ms">
-                <ul class="footer-social">
-                    <li><a href="https://www.facebook.com/profile.php?id=100013408530482"><i
-                            class="fa fa-facebook fa-2x"></i></a></li>
-                    <li><a href="https://www.instagram.com/helen_nipnay/"><i class="fa fa-instagram fa-2x"></i></a></li>
-
-
-                </ul>
-            </div>
-            <!-- end footer social links -->
 
         </div>
     </div>
@@ -623,13 +459,6 @@ End Contact Us
 <footer id="footer" class="footer">
     <div class="container">
         <div class="row">
-
-            <%--            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">--%>
-            <%--                <div class="footer-single">--%>
-            <%--                    <img src="img/footer-logo.png" alt="">--%>
-            <%--                    <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>--%>
-            <%--                </div>--%>
-            <%--            </div>--%>
 
             <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
                  data-wow-delay="300ms">
@@ -673,8 +502,8 @@ End Contact Us
         <div class="row">
             <div class="col-md-12">
                 <p class="copyright text-center">
-                    Copyright 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved. Designed &
-                    developed by <a href="http://themefisher.com/">Themefisher</a>
+                    Copyright 2015 <a href="https://themefisher.com/">Themefisher</a>. All rights reserved. Designed &
+                    developed by <a href="https://themefisher.com/">Themefisher</a>
                     <br>Modify by Lo Tran Son
                 </p>
             </div>
@@ -703,8 +532,8 @@ End Contact Us
 <!-- jquery.appear -->
 <script src="js/jquery.appear.js"></script>
 <!-- Contact form validation -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 <!-- Google Map -->
 <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
@@ -781,6 +610,25 @@ End Contact Us
             }
         });
     });
+</script>
+
+<script>
+    var show= document.getElementById("show-guide");
+    var button=document.getElementById("exc1");
+    function flare (){
+
+        show.style.animationName="focus";
+        show.style.animationDuration="8s";
+
+    }
+    button.addEventListener("click", function(){
+        flare();
+        setTimeout(function (){show.style.animationName="none";},8000);
+
+    })
+
+
+
 </script>
 
 </body>
