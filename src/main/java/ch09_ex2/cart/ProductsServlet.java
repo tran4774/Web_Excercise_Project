@@ -21,7 +21,7 @@ public class ProductsServlet extends HttpServlet {
         ArrayList<Product> products = ProductIO.getProducts(path);
         session.setAttribute("products", products);
 
-        String url = "/exc/ch09_ex2/index.jsp";
+        String url = "/exc/ch09_ex2/index1.jsp";
         getServletContext()
                 .getRequestDispatcher(url)
                 .forward(request, response);

@@ -25,9 +25,9 @@ public class CartServlet extends HttpServlet {
         }
 
         // perform action and set URL to appropriate page
-        String url = "/exc/ch09_ex2/index.jsp";
+        String url = "/exc/ch09_ex2/index1.jsp";
         if (action.equals("shop")) {            
-            url = "/exc/ch09_ex2/index.jsp";    // the "index" page
+            url = "/exc/ch09_ex2/index1.jsp";    // the "index" page
         } 
         else if (action.equals("cart")) {
             String productCode = request.getParameter("productCode");
@@ -64,7 +64,7 @@ public class CartServlet extends HttpServlet {
             }
 
             session.setAttribute("cart", cart);
-            url = "/exc/ch09_ex2/cart.jsp";
+            url = "/exc/ch09_ex2/cart1.jsp";
         }
         else if (action.equals("checkout")) {
             url = "/exc/ch09_ex2/checkout.jsp";
