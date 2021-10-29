@@ -1,19 +1,17 @@
-package ch05_ex1.business;
+package ch11_ex2.business;
 
 import java.io.Serializable;
 
-/**
- * @author asus
- */
 public class User implements Serializable {
+
+    private String email;
     private String firstName;
     private String lastName;
-    private String email;
 
     public User() {
+        email = "";
         firstName = "";
         lastName = "";
-        email = "";
     }
 
     public User(String firstName, String lastName, String email) {
@@ -22,6 +20,14 @@ public class User implements Serializable {
         this.email = email;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
     public String getFirstName() {
         return firstName;
     }
@@ -36,13 +42,5 @@ public class User implements Serializable {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }
