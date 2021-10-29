@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Context>
+    <Resource
+        name="jdbc/sql6447733"
+        auth="Container"
+        type="javax.sql.DataSource"
+        username="sql6447733"
+        password="zY3DR8c8Xe"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6447733?autoReconnet=true"
+        maxActive="100" maxIdle="30" maxWait="10000"
+        logAbandoned="true" removeAbandoned="true"
+        removeAbandonedTimeout="60"
+    />
+</Context>

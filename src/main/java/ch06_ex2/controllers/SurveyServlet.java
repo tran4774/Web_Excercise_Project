@@ -49,7 +49,7 @@ public class SurveyServlet extends HttpServlet {
         request.setAttribute("user", user);
 
         // forward request to JSP
-        String url = "/exc/ch06_ex2/survey.jsp";
+        String url = "/exc/ch06_ex2/tks.jsp";
         getServletContext()
                 .getRequestDispatcher(url)
                 .forward(request, response);

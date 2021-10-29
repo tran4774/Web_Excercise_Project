@@ -241,18 +241,19 @@ Our Assignments
             </div>
 
             <div class="sec-sub-title text-center">
-                <p>There will be one assignment every week of the semester; assignments are due Wednesday at
-                    midnight </p>
+                <p>Bài tập hàng tuần thì chúng em chưa chỉnh sửa giao diện, hai bài là best version là bài tuần 6_2 và 9_2 là bản final </p>
             </div>
 
             <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
                 <ul class="text-center">
                     <li><a href="javascript:" data-filter="all" class="active filter">All</a></li>
+                    <li><a href="javascript:" data-filter=".Score" class="filter">Chấm điểm giữa kì</a></li>
                     <li><a href="javascript:" data-filter=".Chapter5" class="filter">Chapter 5</a></li>
                     <li><a href="javascript:" data-filter=".Chapter6" class="filter">Chapter 6</a></li>
                     <li><a href="javascript:" data-filter=".Chapter7" class="filter">Chapter 7</a></li>
                     <li><a href="javascript:" data-filter=".Chapter8" class="filter">Chapter 8</a></li>
                     <li><a href="javascript:" data-filter=".Chapter9" class="filter">Chapter 9</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter11" class="filter">Chapter 11</a></li>
                     <li><a href="javascript:" data-filter=".final" class="filter">Final Project</a></li>
                 </ul>
             </div>

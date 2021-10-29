@@ -15,7 +15,7 @@
     "description": "CHAPTER6_EX1"
   },
   {
-    "chapter": "Chapter6",
+    "chapter": "Chapter6 Score",
     "linkToExercise": "/exc/ch06_ex2/",
     "description": "CHAPTER6_EX2"
   },
@@ -45,9 +45,19 @@
     "description": "CHAPTER9_EX1"
   },
   {
-    "chapter": "Chapter9",
+    "chapter": "Chapter9 Score",
     "linkToExercise": "/exc/ch09_ex2/loadProducts",
     "description": "CHAPTER9_EX2"
+  },
+  {
+    "chapter": "Chapter11",
+    "linkToExercise": "/exc/ch11_ex1/",
+    "description": "CHAPTER11_EX1"
+  },
+  {
+    "chapter": "Chapter11 Score",
+    "linkToExercise": "/exc/ch11_ex2/userAdmin",
+    "description": "CHAPTER11_EX2"
   },
   {
     "chapter": "final",
