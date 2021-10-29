@@ -253,6 +253,7 @@ Our Assignments
                     <li><a href="javascript:" data-filter=".Chapter7" class="filter">Chapter 7</a></li>
                     <li><a href="javascript:" data-filter=".Chapter8" class="filter">Chapter 8</a></li>
                     <li><a href="javascript:" data-filter=".Chapter9" class="filter">Chapter 9</a></li>
+                    <li><a href="javascript:" data-filter=".Chapter11" class="filter">Chapter 11</a></li>
                     <li><a href="javascript:" data-filter=".final" class="filter">Final Project</a></li>
                 </ul>
             </div>

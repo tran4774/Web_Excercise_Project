@@ -50,6 +50,16 @@
     "description": "CHAPTER9_EX2"
   },
   {
+    "chapter": "Chapter11",
+    "linkToExercise": "/exc/ch11_ex1/",
+    "description": "CHAPTER11_EX1"
+  },
+  {
+    "chapter": "Chapter11 Score",
+    "linkToExercise": "/exc/ch11_ex2/userAdmin",
+    "description": "CHAPTER11_EX2"
+  },
+  {
     "chapter": "final",
     "linkToExercise": "#",
     "description": "Final Project"
