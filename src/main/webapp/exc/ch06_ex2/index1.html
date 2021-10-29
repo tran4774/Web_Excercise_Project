@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="/css/style.css"> <!-- Resource style -->
+	<script src="/js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Contact Form | CodyHouse</title>
+</head>
+<body>
+	<form class="cd-form floating-labels" action="survey" method="post">
+		<fieldset>
+			<h1 style="text-align: center">Survey</h1>
+
+			<div class="error-message">
+				<p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+			</div>
+			<h2>
+				Your information:
+			</h2>
+			<div class="icon" id="firstname">
+				<label class="cd-label" for="cd-name">First name</label>
+				<input class="user" type="text"  name="firstName" id="cd-name" required>
+		    </div> 
+
+		    <div class="icon" id="lastname">
+		    	<label class="cd-label" for="cd-company">Last name</label>
+				<input class="company" type="text" name="lastName" id="cd-company">
+		    </div> 
+
+		    <div class="icon">
+		    	<label class="cd-label" for="cd-email">Email</label>
+				<input class="email error" type="email" name="email" id="cd-email" required>
+		    </div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Project Info</legend>
+
+
+			<div>
+				<h2>How did you hear about us?</h2>
+
+				<ul class="cd-form-list">
+					<li>
+						<input type="radio"  name="heardFrom" value="Search Engine" id="cd-radio-1" checked>
+						<label for="cd-radio-1">Search engine</label>
+					</li>
+						
+					<li>
+						<input type="radio" name="heardFrom" value="Friend" id="cd-radio-2">
+						<label for="cd-radio-2">Word of mouth</label>
+					</li>
+
+					<li>
+						<input type="radio" name="heardFrom" value="Other" id="cd-radio-3">
+						<label for="cd-radio-3">Other</label>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h2>Would you like to receive announcements about new CDs and special offers?</h2>
+
+				<ul class="cd-form-list">
+					<li>
+						<input type="checkbox" id="cd-checkbox-1">
+						<label for="cd-checkbox-1">YES, I'd like that.</label>
+					</li>
+
+
+				</ul>
+			</div>
+
+			<div>
+				<h2 style="display: inline-block">Please contact me by: </h2>
+
+				<ul class="cd-form-list">
+					<li>
+						<select name="contactVia">
+							<option value="Both" selected>Email or postal mail</option>
+							<option value="Email">Email only</option>
+							<option value="Postal Mail">Postal mail only</option>
+						</select>
+					</li>
+
+
+				</ul>
+			</div>
+			<div>
+		      	<input type="submit" value="Submit">
+		    </div>
+		</fieldset>
+	</form>
+<script src="/js/jquery-2.1.1.js"></script>
+<script src="/js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

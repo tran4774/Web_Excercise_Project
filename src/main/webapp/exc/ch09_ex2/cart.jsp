@@ -10,8 +10,8 @@
 
 <table>
     <tr>
-        <th>Quantity</th>
         <th>Description</th>
+        <th>Price</th>
         <th>Price</th>
         <th>Amount</th>
         <th></th>
