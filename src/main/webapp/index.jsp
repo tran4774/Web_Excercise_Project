@@ -42,13 +42,13 @@
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-482E566C01"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-11WEFTNTR0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-482E566C01');
+        gtag('config', 'G-11WEFTNTR0');
     </script>
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
